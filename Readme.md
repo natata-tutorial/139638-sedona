@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Станислав Михайлов](https://up.htmlacademy.ru/adaptive/11/user/139638).
+* Студент: [Станислав Михайлов](https://up.htmlacademy.ru/adaptive/11/user/139638).))
 * Наставник: [Анна Лёмина](https://htmlacademy.ru/profile/id83874).
 
 ---
