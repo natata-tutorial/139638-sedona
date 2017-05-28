@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <span class="main-nav__close"></span>
+        <a class="main-nav__link main-nav__link--active"href="#">Главная</a>
+        <a class="main-nav__link" href="photo.html">фото и видео</a>
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
+        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy<a>
+      </nav>
+      <div class="top-row">
+        <a class="top-row__logo" href="index.html"></a>
+        <button class="menu-toggle" type="button"></button>
+      </div>
+  		<div class="main-banner">
+  			<img href="img/banner-form" alt="Sedona" >
+  		</div>
+  	</header>
+  	<section class="testimonial">
+      <h2 class="testimonial__title">Оставьте свой отзыв</h2>
+      <p class="testimonial__text"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="forma-testimonial" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="forma-fio">
+          <legend>Представьтесь:</legend>
+           <label>имя*:<input type="text" name="name" placeholder="Пётр" required></label>
+           <label>Фамилия*:<input type="text" name="last-name" placeholder="Иванов" required></label>
+           <label>Отчество:<input type="text" name="second-name" placeholder="Александрович"></label>
+        </fieldset>
+        <fieldset class="forma-contact">
+          <legend>Контактная информация:</legend>
+           <label>Контактный телефон*:<input type="tel" name="phone" placeholder="Введите телефон" required></label>
+           <label>Электронная почта*:<input type="email" name="email" placeholder="Введите e-mail" required></label>
+        </fieldset>
+        <fieldset class="forma-experience">
+          <legend>ВАше Общее впечатление:</legend>
+            <input name="opinion" type="radio" id="good" value="good"><label for="good">Скорее положительное</label>
+            <input name="opinion" type="radio" id="poor" value="poor"><label for="poor">Скорее положительное</label>
+            <input name="opinion" type="radio" id="dontKnow" value="dontKnow"> <label for="dontKnow">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="forma-attractions">
+          <legend>посещенные  достопримечательности:</legend>
+            <input name="attractions" type="checkbox" id="devil" value="devil" checked><label for="devil" >Мост Дьявола</label>
+            <input name="attractions" type="checkbox" id="park" value="park" checked><label for="park">Слайд-парк</label>
+            <input name="attractions" type="checkbox" id="kolokol" value="kolokol" > <label for="kolokol">Гора-Колокол</label>
+            <input name="attractions" type="checkbox" id="redRock" value="redRock" checked> <label for="redRock">Красные скалы</label>
+        </fieldset>
+        <label>Опишите свои эмоции:
+          <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
+        <button type="submit">Отправить отзыв</button>
+       </form>   
+    </section>
+    <footer class="page-footer">
+      <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
+      <div class="social">
+        <a class="social__link social__link--twitter" href="#">Twitter</a>
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+        <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </div>
+      <div class="page-footer-copyright">
+        <p>Разработано</p>
+        <a class="page-footer-logo" href="https://htmlacademy.ru/"><img src="img/academy-logo"></a>
+      </div>
+      </div>
+		</footer>
+  </body>
+</html>
