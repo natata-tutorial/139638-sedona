@@ -5,43 +5,87 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  	<header class="page-header">
-  		<nav class="page-header__nav">
-  			<a class="page-header__logo"><img src="/img/logo" alt="Логотип"></a>
-  			<ul class="page-header__menu">
-  				<li><a href="index.html">Главная</a></li>
-  				<li><a href="photo.html">Фото и видео</a></li>
-  				<li><a href="form.html">Форма отзыва</a></li>
-  				<li><a href="https://htmlacademy.ru/">HTml Academy</a></li>
-  				<span class="page-header__cross"></span>
-  			</ul>
-  			<button class="page-header__btn-open" ></button>
-  		</nav>
-  		<div class="page-header-banner--photo-page">
-  			<h1>Sedona</h1>
+  	 <header class="page-header">
+      <nav class="main-nav">
+        <span class="main-nav__close"></span>
+        <a class="main-nav__link " href="index/html">Главная</a>
+        <a class="main-nav__link main-nav__link--active" href="#">фото и видео</a>
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
+        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy<a>
+      </nav>
+      <div class="top-row">
+        <a class="top-row__logo" href="index.html"></a>
+        <button class="menu-toggle" type="button"></button>
+      </div>
+  		<div class="main-banner">
+  			<img href="img/banner-page" alt="Sedona" >
   		</div>
   	</header>
-  
-  	<footer class="page-footer">
-	  	<div class="page-footer-contact">
-	  		<h2>Заинтересовались?</h2>
-	  		<p> Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в седоне</p>
-	  		<a class="page-footer-btn"> Найти гостиницу</a>
-	  	</div>
-	  	<div class="Google-map">
-	  	</div>
-	  	<div class="page-footer-social">
-	  		<h2>#Visitsedona</h2>
-	  		<ul class="page-footer-social-seti">
-	  			<li class="page-footer-social-seti__tw"><a>twitter</a></li>
-					<li class="page-footer-social-fb"><a>Facebook</a></li>
-					<li class="page-footer-social-seti__ytube"><a>YouTube</a></li>
-				</ul>
-				<div class="page-footer-copyright">
-					<p>Разработано</p>
-					<a class="page-footer-logo" href="https://htmlacademy.ru/"><img src="imh/academy-logo"></a>
-				</div>
-			</div>
+    <section class="testimonial">
+      <h2 class="testimonial__title">Фото и видео</h2>
+      <p class="testimonial__text"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </section>
+    <section class="photo-catalog">
+      <figure class="photo-catalog__item">
+        <figcaption class="photo-catalog__text">
+          <p>неродные просторы</p>
+          <q>Автор фото: Борис</q>
+          <span>1350</span>
+        </figcaption>
+        <picture>
+          <img src="img/item-photo1" alt="Неродные просторы">
+        </picture>  
+      </figure>
+      <figure class="photo-catalog__item">
+        <figcaption class="photo-catalog__text">
+          <p>Местная растительность </p>
+          <q>Автор фото: Сергей</q>
+          <span>143</span>
+        </figcaption>
+        <picture>
+          <img src="img/item-photo2" alt="Местная растительность">
+        </picture>  
+      </figure>
+      <figure class="photo-catalog__item">
+        <figcaption class="photo-catalog__text">
+          <p>Дорога на север</p>
+          <q>Автор фото: Пётр</q>
+          <span>96</span>
+        </figcaption>
+        <picture>
+          <img src="img/item-photo3" alt="Дорога на север">
+        </picture>  
+      </figure>
+      <figure class="photo-catalog__item">
+        <figcaption class="photo-catalog__text">
+          <p>Мост дьявола</p>
+          <q>Автор фото: Антон</q>
+          <span>254</span>
+        </figcaption>
+        <picture>
+          <img src="img/item-photo1" alt="Мост дьявола">
+        </picture>  
+      </figure>
+    </section>
+    <section class="photo-video">
+      <h2 class="photo-video__title">Все еще сомневаетесь?</h2>
+      <p class="photo-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video controls="controls"  poster="img/video-poster.jpg" width="200" >
+        <source src="video/video1" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" >
+      </video>
+    </section>
+  	 <footer class="page-footer">
+      <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
+      <div class="social">
+        <a class="social__link social__link--twitter" href="#">Twitter</a>
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+        <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </div>
+      <div class="page-footer-copyright">
+        <p>Разработано</p>
+        <a class="page-footer-logo" href="https://htmlacademy.ru/"><img src="img/academy-logo"></a>
+      </div>
+      </div>
 		</footer>
   </body>
 </html>
