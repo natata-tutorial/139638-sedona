@@ -5,17 +5,17 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "6.7.x",
-    "grunt": "1.0.1",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-postcss": "0.8.0",
-    "grunt-sass": "2.0.0",
+    "browser-sync": "2.18.12",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.4.0",
+    "gulp-sass": "3.1.0",
     "@htmlacademy/editorconfig-cli": "1.x"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt sass && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
