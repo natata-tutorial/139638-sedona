@@ -1,1 +1,13 @@
-body { background: red; }
+@import "normalize.scss";
+@import "grid.scss";
+@import "variables.scss";
+@import "header/page-header.scss";
+@import "header/main-nav.scss";
+body {
+  background: $grey-color; 
+  font-family: "PT Sans", Arial, sans-serif;
+  }
+a {
+  text-decoration:none;  
+  }
+
