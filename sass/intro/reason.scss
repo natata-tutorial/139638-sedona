@@ -1,0 +1,16 @@
+.reason{
+  list-style:none;  
+}
+.reason__about{
+  text-align:center;
+  &--bg-triangle{
+  background-color:$grey-blue;
+  color:#ffffff;
+  }
+  }
+.reason__photo{
+  display:block;
+}
+.reason__title{
+  margin:0;
+}

@@ -3,11 +3,27 @@
 @import "variables.scss";
 @import "header/page-header.scss";
 @import "header/main-nav.scss";
+@import "header/main-banner.scss";
+@import "intro/intro.scss";
+@import "intro/reasons.scss";
+@import "intro/reason.scss";
+@import "intro/advantages.scss";
+@font-face{
+font-family: "PT Sans";
+src: url("/fonts/ptsans.woff2"),
+     url("/fonts/ptsans.woff"),
+     url("/fonts/ptsansbold.woff"),
+     url("/fonts/ptsansbold.woff2");
+}
 body {
   background: $grey-color; 
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform:uppercase;
   }
 a {
   text-decoration:none;  
   }
+img{
+  max-width:100%;
+}
 
