@@ -1,5 +1,7 @@
 .main-nav{
-text-align:center;}
+text-align:center;
+}
+
 .main-nav__link{
 font-size:18px;
 line-height:40px;
@@ -9,4 +11,10 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 border-top: 1px solid rgba(255, 255, 255, 0.3);
 padding:7px 0;
 text-transform:uppercase;
+&:nth-child(2){
+  border-top:none;
+}
+&:last-child{
+  border-bottom:none;
+}
 }

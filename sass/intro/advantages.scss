@@ -1,4 +1,26 @@
 .advantages{
-  padding:0;
+  padding:20px;
   background-color:#ffffff;
+}
+.advantages__title{
+  padding:20px 20px 20px 80px;
+  position:relative;
+}
+.advantages__title--house{
+  &::before{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:38px;
+    background-image: url(/img/icon-house.svg);
+    background-size:cover;
+    left:30px;
+    color:$grey-blue;
+  }
+}
+.advantages__text{
+  margin:0;
+}
+.advantages__item{
+  list-style:none;
 }
