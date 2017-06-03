@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import "grid.scss";
+@import "mixin.scss";
 @import "variables.scss";
 @import "header/page-header.scss";
 @import "header/main-nav.scss";
@@ -11,6 +12,9 @@
 @import "intro/advantages.scss";
 @import "intro/map.scss";
 @import "footer/page-footer.scss";
+@import "footer/social.scss";
+@import "form/form.scss";
+@import "photo-catalog/photo-catalog.scss";
 @font-face{
 font-family: "PT Sans";
 src: url("/fonts/ptsans.woff2"),

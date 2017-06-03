@@ -1,0 +1,12 @@
+.social{
+  display:flex;
+  justify-content:center;
+  margin-top:40px;
+}
+.social__link{
+  font-size:0;
+  width:46px;
+  height:48px;
+  background-color:$grey-blue;
+  margin-right:6px;
+}
