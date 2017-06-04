@@ -12,14 +12,26 @@
   display:block;
 }
 .reason__title{
-  padding:40px 20px 10px; 
+  padding:38px 20px 0; 
   font-size:18px;
   margin:0;
+}
+.reason--bg-grey .reason__title{
+  padding:28px 20px 0;
 }
 .reason__number{
   font-size:14px;
 }
 .reason__text{
   font-size:14px;
-  margin-bottom:0px
+  margin-bottom:0px;
+  padding:0px 0px 45px;
+  margin:0 20px 0;
+  line-height:21px;
+  &--bord-bot{
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+.reason--bg-grey  .reason__text{
+  padding:4px 15px 30px;
 }

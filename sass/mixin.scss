@@ -2,9 +2,17 @@
   content:"";
   position:absolute;
   background-size:cover;
-  left:30px;
-  color:$grey-blue;
-  top:-5px;
+  fill:$grey-blue;
   width:$width;
   height:$height;
+}
+@mixin trangle($width: 322px){
+    content:"";
+  position:absolute;
+  background-size:cover;
+  left:-1px;
+  top:-26px;
+  width:$width;
+  height:26px;
+  background-repeat:no-repeat;
 }
