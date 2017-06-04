@@ -2,6 +2,7 @@
 text-align:center;
 @media (min-width: $tablet-width){
   display:flex;
+  background:#ffffff;
 }
 }
 
@@ -14,15 +15,14 @@ text-align:center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding:7px 0;
-  text-transform:uppercase;
-  &:nth-child(2){
-  border-top:none;}
+  text-transform:uppercase; 
   @media (min-width: $tablet-width){
     background-color:#ffffff;
+    color:black;
   }
-  
-}
-&:last-child{
+  &:nth-child(2){
+  border-top:none;} 
+  &:last-child{
   border-bottom:none;
 }
 }
