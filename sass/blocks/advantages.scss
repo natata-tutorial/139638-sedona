@@ -12,7 +12,7 @@
     position:absolute;
     width:40px;
     height:38px;
-    background-image: url(/img/icon-house.svg);
+    background-image: url(../img/icon-house.svg);
     background-size:cover;
     left:30px;
     color:$grey-blue;
@@ -20,13 +20,13 @@
 }
 .advantages__title--sovenir{
   &::before{
-    background-image: url(/img/icon-gift.svg);
+    background-image: url(../img/icon-gift.svg);
     @include icon();
   }
 }
 .advantages__title--food{
   &::before{
-    background-image: url(/img/icon-burger.svg);
+    background-image: url(../img/icon-burger.svg);
     @include icon();
   }
 }

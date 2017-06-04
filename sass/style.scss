@@ -1,36 +1,20 @@
 @import "normalize.scss";
-@import "grid.scss";
 @import "mixin.scss";
 @import "variables.scss";
-@import "header/page-header.scss";
-@import "header/main-nav.scss";
-@import "header/main-banner.scss";
-@import "header/top-row.scss";
-@import "intro/intro.scss";
-@import "intro/reasons.scss";
-@import "intro/reason.scss";
-@import "intro/advantages.scss";
-@import "intro/map.scss";
-@import "footer/page-footer.scss";
-@import "footer/social.scss";
-@import "form/form.scss";
-@import "photo-catalog/photo-catalog.scss";
-@font-face{
-font-family: "PT Sans";
-src: url("/fonts/ptsans.woff2"),
-     url("/fonts/ptsans.woff"),
-     url("/fonts/ptsansbold.woff"),
-     url("/fonts/ptsansbold.woff2");
-}
-body {
-  background: #646464; 
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform:uppercase;
-  }
-a {
-  text-decoration:none;  
-  }
-img{
-  max-width:100%;
-}
+@import "grid.scss";
+@import "global.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-banner.scss";
+@import "blocks/top-row.scss";
+@import "blocks/intro.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reason.scss";
+@import "blocks/advantages.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/form.scss";
+@import "blocks/photo-catalog.scss";
+
 

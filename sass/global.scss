@@ -1,0 +1,18 @@
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2"),
+       url("../fonts/ptsans.woff"),
+       url("../fonts/ptsansbold.woff"),
+       url("../fonts/ptsansbold.woff2");
+}
+body {
+  background: #646464; 
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform:uppercase;
+  }
+a {
+  text-decoration:none;  
+  }
+img{
+  max-width:100%;
+}
