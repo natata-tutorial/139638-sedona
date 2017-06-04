@@ -1,0 +1,25 @@
+.reason{
+  list-style:none;  
+}
+.reason__about{
+  text-align:center;
+  &--bg-triangle{
+  background-color:$grey-blue;
+  color:#ffffff;
+  }
+  }
+.reason__photo{
+  display:block;
+}
+.reason__title{
+  padding:40px 20px 10px; 
+  font-size:18px;
+  margin:0;
+}
+.reason__number{
+  font-size:14px;
+}
+.reason__text{
+  font-size:14px;
+  margin-bottom:0px
+}

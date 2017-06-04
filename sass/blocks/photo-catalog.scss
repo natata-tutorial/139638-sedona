@@ -1,0 +1,28 @@
+.photo-catalog{
+  background-color:#ffffff;
+}
+.photo-catalog__item{
+  display:flex;
+  flex-wrap:wrap;
+  border-bottom: 1px solid #e5e5e5;
+}
+.photo-catalog__photo{
+  padding:0 20px;
+  order:1;
+  flex-basis:100%;
+}
+.photo-catalog__rating{
+    padding:0 20px;
+    order:4;
+    flex-basis:100%;
+}
+.photo-catalog__author{
+  padding:0 20px;
+  order:3;
+  flex-basis:100%;
+}
+.photo-catalog__title{
+  padding:0 20px;
+  order:2;
+  flex-basis:100%;
+}
