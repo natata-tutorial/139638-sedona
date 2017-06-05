@@ -1,6 +1,10 @@
 .advantages{
   padding:20px 20px 25px;
   background-color:#ffffff;
+   @media (min-width: $tablet-width){
+     flex-basis:100%;
+     display:flex;
+   }
 }
 .advantages__title{
   padding:0px 20px 0px 48px;

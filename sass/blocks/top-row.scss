@@ -9,4 +9,8 @@ justify-content:space-between;
 .top-row__logo{
    margin-left:auto;
    margin-right:20%;
+   @media (min-width: $tablet-width){
+     margin-right:auto;
+     margin-top:-56px;
+   }
 }

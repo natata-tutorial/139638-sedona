@@ -19,6 +19,9 @@
   height:350px;
   margin:0 -20px;
   position:relative;
+  @media (min-width: $tablet-width){
+  background-image: url(../img/map-tablet.jpg);
+  }
 }
 .map__marker{
   background-image: radial-gradient(circle, $grey-blue 8px, 

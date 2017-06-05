@@ -6,5 +6,12 @@
    &::before{
     @include trangle();
      background-image: url(../img/bg-intro-triangle-mobile-blue.svg);
+      @media (min-width: $tablet-width){
+        display:none;
+      }
+  }
+  @media (min-width: $tablet-width){
+    display:flex;
+    flex-wrap:wrap;
   }
 }

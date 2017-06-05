@@ -1,11 +1,19 @@
 .reason{
-  list-style:none;  
+  list-style:none; 
+  @media (min-width: $tablet-width){
+  display:flex;
+  flex-wrap:wrap;
+  width:100%
+}
 }
 .reason__about{
   text-align:center;
   &--bg-triangle{
   background-color:$grey-blue;
   color:#ffffff;
+  }
+  @media (min-width: $tablet-width){
+    flex-basis:256px;
   }
   }
 .reason__photo{
@@ -35,3 +43,9 @@
 .reason--bg-grey  .reason__text{
   padding:4px 15px 30px;
 }
+
+  .reason--bg-grey {
+    @media (min-width: $tablet-width){
+    flex-basis:33%;
+  }
+  }
