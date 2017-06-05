@@ -6,11 +6,11 @@
   width:$width;
   height:$height;
 }
-@mixin trangle($width: 322px){
+@mixin trangle($width: 333px){
     content:"";
   position:absolute;
   background-size:cover;
-  left:-1px;
+  left:-7px;
   top:-26px;
   width:$width;
   height:26px;
