@@ -24,11 +24,11 @@
           </a>
           <button class="menu-toggle" type="button"></button>
         </div>
-        <div class="main-banner">
-          <img src="img/text-sedona-index.svg" alt="Sedona" /> 
+        <div class="main-banner main-banner--short">
+          <img src="img/text-sedona-index.svg" alt="Sedona" width="460" height="160" /> 
         </div>
       </header>
-      <section class="intro">
+      <section class="intro intro--photo">
         <h2 class="intro__title">Фото и видео</h2>
         <p class="intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
@@ -38,60 +38,74 @@
           <p class="photo-catalog__author">Автор фото: Борис</p>
           <div class="photo-catalog__rating">
             <a href="#" class="photo-catalog__like">
-              <img src="img/like" alt="like" />
+              <img src="img/icon-like.svg" alt="like" />
             </a>
             <span class="photo-catalog__count">1350</span>
           </div>
-          <picture class="photo-catalog__photo">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы">
-          </picture>  
+          <div class="photo-catalog__photo">
+            <picture>
+              <img src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы">
+            </picture>
+          </div>
         </article>
         <article class="photo-catalog__item">
           <p class="photo-catalog__title">Местная растительность </p>
           <p class="photo-catalog__author">Автор фото: Сергей</p>
           <div class="photo-catalog__rating">
             <a href="" class="photo-catalog__like">
-              <img src="img/like" alt="like" />
+              <img src="img/icon-like.svg" alt="like" />
             </a>
             <span class="photo-catalog__count">143</span>
           </div>
-          <picture class="photo-catalog__photo">
-            <img src="img/photo-2-mobile@1x.jpg" alt="Местная растительность">
-          </picture>  
+          <div class="photo-catalog__photo">
+            <picture>
+              <img src="img/photo-2-mobile@1x.jpg" alt="Местная растительность">
+            </picture>
+          </div> 
         </article>
         <article class="photo-catalog__item">
           <p class="photo-catalog__title">Дорога на север</p>
           <p class="photo-catalog__author">Автор фото: Пётр</p>
           <div class="photo-catalog__rating">
             <a href="" class="photo-catalog__like">
-              <img src="img/like" alt="like" />
+              <img src="img/icon-like.svg" alt="like" />
             </a>
             <span class="photo-catalog__count">96</span>
           </div>
-          <picture class="photo-catalog__photo">
-            <img src="img/photo-3-mobile@1x.jpg" alt="Дорога на север">
-          </picture>  
+          <div class="photo-catalog__photo">
+            <picture>
+              <img src="img/photo-3-mobile@1x.jpg" alt="Дорога на север">
+            </picture>
+          </div> 
         </article>
         <article class="photo-catalog__item">
           <p class="photo-catalog__title">Мост дьявола</p>
           <p class="photo-catalog__author">Автор фото: Антон</p>
           <div class="photo-catalog__rating">
             <a href="" class="photo-catalog__like">
-              <img src="img/like" alt="like" />
+              <img src="img/icon-like.svg" alt="like" />
             </a>
             <span class="photo-catalog__count">254</span>
           </div>
-          <picture class="photo-catalog__photo">
-            <img src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола">
-          </picture>  
+          <div class="photo-catalog__photo">
+            <picture>
+               <img src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола">
+            </picture>
+          </div>           
         </article>
       </section>
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video controls="controls"  poster="img/video-poster.jpg" width="200" >
-          <source src="video/video1" type="video/mp4; codecs='avc1.42E01E, mp4a.40.2'" >
-        </video>
+        <div class="video__photo" >
+          <picture>
+            <img src="img/video-mobile@1x.jpg" alt="Постер для видео">
+          </picture>
+          <div class="video__controls">
+            <div class="video__controls-top"></div>
+            <div class="video__controls-bottom"></div>
+          </div>
+        </div>
       </section>
       <footer class="page-footer">
         <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
@@ -102,7 +116,7 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__logo" href="https://htmlacademy.ru/"><img src="img/academy-logo"></a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="Логотип академии" width="40px" height="40px"></a>
         </div>
       </footer>
     </div>
