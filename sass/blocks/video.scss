@@ -1,0 +1,34 @@
+.video{
+  background-color:#ffffff;
+  padding:25px 20px 130px;
+  text-align:center;
+}
+.video__title{
+  margin:0;
+  font-size:18px;
+  line-height:26px;
+}
+.video__text{
+  font-size:14px;
+  line-height:24px;
+  padding:14px 10px;
+}
+.video__photo{
+    margin:0 -20px;
+    position:relative;
+}
+.video__controls{
+  position:absolute;
+  width:280px;
+  height:111px;
+  bottom:-63px;
+  left:20px;
+}
+.video__controls-top{
+  height:45px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.video__controls-bottom{
+  height:66px;
+  background-color:#f2f2f2;
+}

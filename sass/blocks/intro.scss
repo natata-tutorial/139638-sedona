@@ -3,6 +3,9 @@
   background-color:#ffffff;
   text-align:center;
   padding:40px 20px 50px;
+  &.intro--photo{
+    padding: 35px 25px 30px;
+  }
   &::before{
     @include trangle();
      background-image: url(../img/bg-intro-triangle-mobile.svg);
