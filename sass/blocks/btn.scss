@@ -2,15 +2,19 @@
   background-color:$grey-blue;
   display:block;
   box-sizing:border-box;
-}
-.btn{
-  &--map{
-    width:100%;
-    font-size:21px;
-    line-height:26px;
-    color:#ffffff;
-    font-weight:700;
-    padding:16px;
-    margin-bottom:50px
+  width:100%;
+  font-size:21px;
+  line-height:26px;
+  color:#ffffff;
+  font-weight:700;
+  padding:16px;
+  margin-bottom:50px;
+  
+  &.btn--form{
+    border:none;
+    cursor:pointer;
+    margin-bottom:0;
+    
   }
 }
+
