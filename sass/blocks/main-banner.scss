@@ -1,14 +1,18 @@
 .main-banner{
-background-image: url("../img/bg-back-mobile@1x.jpg");
-background-size:cover;
-height:390px;
-padding: 90px 20px 85px;
-box-sizing: border-box;
-background-position: -224px;
-&.main-banner--short{
-  height: 160px;
-  background-size: auto;
-  padding: 0;
-  background-position-y: 160px;
-}
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size:cover;
+  height:390px;
+  padding: 90px 20px 85px;
+  box-sizing: border-box;
+  text-align:center;
+  background-position: -224px;
+    &--short{
+      height: 160px;
+      background-size: auto;
+      padding: 0;
+      background-position-y: 160px;
+      @media (min-width: $tablet-width){
+        height: 290px;
+      }
+  }
 }

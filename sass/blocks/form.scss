@@ -1,6 +1,12 @@
-.form{
+.form form{
   background-color:#ffffff;
+    @media (min-width: $tablet-width){
+      display:flex;
+      flex-wrap:wrap;
+      padding:0 60px;
+    }
 }
+
 .form__group{
   border-bottom: 1px solid #e5e5e5;
   &.form__group--effect{
@@ -14,7 +20,29 @@
   &.form__group--feelings{
     border-bottom:none;
   }
-  
+}
+@media (min-width: $tablet-width){
+  .form__group--fio{
+    flex-basis:50%;
+    order:2;
+  }
+  .form__group--effect{
+    flex-basis:50%;
+    order:1;
+  }
+  .form__group--contacts{
+    order:3;
+  }
+  .form__group--sight{
+    order:4;
+  }
+  .form__group--feelings{
+    order:5;
+    flex-basis:100%;
+  }
+ .form__group--submit{
+    order:6;
+  }
 }
 .form__title{
   margin:0;

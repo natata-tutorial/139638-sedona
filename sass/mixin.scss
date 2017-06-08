@@ -7,7 +7,7 @@
   height:$height;
 }
 @mixin trangle($width: 333px){
-    content:"";
+  content:"";
   position:absolute;
   background-size:cover;
   left:-7px;

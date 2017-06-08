@@ -12,14 +12,27 @@
   }
   &::before{
     @include trangle();
-     background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    }
+  }
+@media (min-width: $tablet-width){
+  .intro{
+    &::before{
+      background-image: url(../img/bg-triangle.svg);
+    }
   }
 }
+  
+  
 .intro__title{
   font-size:18px;
   line-height:26px;
   padding:0 5px;
-  margin:0
+  margin:0;
+  font-weight:700;
+    @media (min-width: $tablet-width){
+      font-size:30px;
+    }
 }
 .intro__text{
   font-size:14px;
