@@ -895,6 +895,12 @@ input:checked + .form__sight-label::before {
 
 .photo-catalog {
   background-color: #ffffff; }
+  @media (min-width: 768px) {
+    .photo-catalog {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 .photo-catalog__item {
   display: -ms-flexbox;
@@ -903,6 +909,16 @@ input:checked + .form__sight-label::before {
       flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
   min-height: 415px; }
+  @media (min-width: 768px) {
+    .photo-catalog__item {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      background-color: #f2f2f2; } }
+
+@media (min-width: 768px) {
+  .photo-catalog__item:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
 
 .photo-catalog__photo {
   padding: 0 20px;
@@ -911,6 +927,9 @@ input:checked + .form__sight-label::before {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-top: 20px; }
+  @media (min-width: 768px) {
+    .photo-catalog__photo {
+      padding: 0; } }
 
 .photo-catalog__rating {
   padding: 0 20px;
@@ -919,6 +938,12 @@ input:checked + .form__sight-label::before {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 19px; }
+  @media (min-width: 768px) {
+    .photo-catalog__rating {
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+      -ms-flex-order: 2;
+          order: 2; } }
 
 .photo-catalog__author {
   padding: 0 20px;
@@ -932,6 +957,10 @@ input:checked + .form__sight-label::before {
   margin-bottom: 0;
   text-transform: none;
   color: #333333; }
+  @media (min-width: 768px) {
+    .photo-catalog__author {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%; } }
 
 .photo-catalog__title {
   padding: 0 20px;
@@ -943,6 +972,10 @@ input:checked + .form__sight-label::before {
   font-weight: bold;
   line-height: 21px;
   margin: 5px 0 4px; }
+  @media (min-width: 768px) {
+    .photo-catalog__title {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%; } }
 
 .photo-catalog__count {
   font-size: 14px;
