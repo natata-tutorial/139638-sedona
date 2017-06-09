@@ -1,10 +1,11 @@
 .advantages{
-  padding:20px;
+  padding:20px 20px 25px;
   background-color:#ffffff;
 }
 .advantages__title{
-  padding:20px 20px 20px 80px;
+  padding:0px 20px 0px 48px;
   position:relative;
+  font-size:18px;
 }
 .advantages__title--house{
   &::before{
@@ -14,24 +15,33 @@
     height:38px;
     background-image: url(../img/icon-house.svg);
     background-size:cover;
-    left:30px;
+    left:0px;
+    top:-12px;
     color:$grey-blue;
+    
   }
 }
 .advantages__title--sovenir{
   &::before{
     background-image: url(../img/icon-gift.svg);
     @include icon();
+    top:-12px;
+    left:2px;
   }
 }
 .advantages__title--food{
   &::before{
     background-image: url(../img/icon-burger.svg);
-    @include icon();
+    @include icon(38px, 36px);
+    top:-5px;
+    left:0px;
   }
 }
 .advantages__text{
   margin:0;
+  padding:0 0 10px 50px;
+  font-size:14px;
+  line-height:21px;
 }
 .advantages__item{
   list-style:none;

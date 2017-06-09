@@ -1,17 +1,22 @@
 .intro{
+  position:relative;
   background-color:#ffffff;
   text-align:center;
-  padding:45px 20px 50px;
+  padding:40px 20px 50px;
+  &::before{
+    @include trangle();
+     background-image: url(../img/bg-intro-triangle-mobile.svg);
+  }
 }
 .intro__title{
   font-size:18px;
   line-height:26px;
-  padding:0 7px;
+  padding:0 5px;
   margin:0
 }
 .intro__text{
   font-size:14px;
-  padding:0;
+  padding:29px 0 0;
   margin:0;
   line-height:24px;
 }
