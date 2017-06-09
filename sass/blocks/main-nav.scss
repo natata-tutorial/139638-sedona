@@ -4,6 +4,7 @@ position:relative;
 @media (min-width: $tablet-width){
   display:flex;
   background:#ffffff;
+  justify-content:space-between;
 }
 }
 
@@ -20,6 +21,13 @@ position:relative;
   @media (min-width: $tablet-width){
     background-color:#ffffff;
     color:black;
+    font-size:14px;
+    border-bottom:none;
+    margin-left:50px;
+    margin-right:27px;
+    &:nth-child(3){
+      margin-right:111px;
+    }
   }
   &:nth-child(2){
   border-top:none;} 
@@ -34,4 +42,7 @@ position:relative;
   height:22px;
   right:20px;
   top:17px;
+  @media (min-width: $tablet-width){
+    display:none;
+  }
 }

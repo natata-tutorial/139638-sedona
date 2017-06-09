@@ -1,4 +1,4 @@
-.main-banner{
+/*.main-banner{
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size:cover;
   height:390px;
@@ -15,4 +15,15 @@
         height: 290px;
       }
   }
+}
+*/
+.main-banner {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-position: top;
+    text-align:center;
+}
+.main-banner__photo {
+  padding:90px 20px 50px;
+  box-sizing:border-box;
 }
