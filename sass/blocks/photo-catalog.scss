@@ -22,7 +22,7 @@
 }
 .photo-catalog__item:first-child{
   @media (min-width: $tablet-width){
-     flex-basis:100%;
+    flex-basis:100%;
   }
 }
 .photo-catalog__photo{
