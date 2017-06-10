@@ -39,7 +39,7 @@
     order:5;
     flex-basis:100%;
   }
- .form__group--submit{
+  .form__group--submit{
     order:6;
   }
 }
@@ -59,7 +59,7 @@
   justify-content: space-between;
   &.form__wrapper--fio{
     flex-wrap:nowrap;
-  } 
+  }
   &.form__wrapper--contact{
     margin-bottom:23px;
   }
@@ -125,8 +125,8 @@ input +.form__effect-label::before{
   left: -79px;
 }
 input:checked +.form__effect-label::before{
-    background-image: radial-gradient(circle, #333333 9px, 
-                     rgba(255, 255, 255, 0) 9px);
+    background-image: radial-gradient(circle, #333333 9px,
+                      rgba(255, 255, 255, 0) 9px);
 }
 .form__sight-field{
   display:none;

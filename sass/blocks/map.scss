@@ -19,10 +19,10 @@
   margin-top:20px;
   margin-bottom:35px;
   color:$text-color;
-   @media (min-width: $tablet-width){
-     margin:35px 40px 41px;
-     padding: 0 100px;
-   }
+    @media (min-width: $tablet-width){
+      margin:35px 40px 41px;
+      padding: 0 100px;
+    }
 }
 .map__photo{
   background-image: url(../img/bg-map-mobile@1x.jpg);
@@ -34,7 +34,7 @@
   }
 }
 .map__marker{
-  background-image: radial-gradient(circle, $grey-blue 8px, 
+  background-image: radial-gradient(circle, $grey-blue 8px,
                     white 9px, white 14px, rgba(255, 255, 255, 0) 15px  );
   width:100%;
   height:100%;
