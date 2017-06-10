@@ -1,29 +1,22 @@
-/*.main-banner{
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size:cover;
-  height:390px;
-  padding: 90px 20px 85px;
-  box-sizing: border-box;
-  text-align:center;
-  background-position: -224px;
-    &--short{
-      height: 160px;
-      background-size: auto;
-      padding: 0;
-      background-position-y: 160px;
-      @media (min-width: $tablet-width){
-        height: 290px;
-      }
-  }
-}
-*/
 .main-banner {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: cover;
     background-position: top;
     text-align:center;
+    &--short{
+      background-position: -224px 160px;
+      background-size:auto;
+    }
 }
 .main-banner__photo {
-  padding:90px 20px 50px;
+  padding:90px 20px 82px;
   box-sizing:border-box;
+  &--short{
+    padding:53px 40px 61px;
+  }
+}
+@media (min-width: $tablet-width){
+  .main-banner__photo{
+    padding: 80px 0px 87px;
+  }
 }

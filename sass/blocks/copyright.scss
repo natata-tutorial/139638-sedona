@@ -3,11 +3,25 @@
   justify-content:center;
   margin-top:30px;
   margin-bottom:10px;
+  flex-basis:33%;
 }
 .copyright__text{
   font-size:14px;
+  color:$text-color;
 }
 .copyright__logo{
   margin-left:9px;
   align-self:center;
+}
+@media (min-width: $tablet-width){
+  .copyright{
+    margin:0;
+    justify-content:flex-end;
+  }
+  .copyright__text{
+    margin-left:40px;
+  }
+  .copyright__logo{
+    margin-right:-5px;
+  }
 }

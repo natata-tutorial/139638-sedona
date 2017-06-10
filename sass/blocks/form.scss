@@ -160,3 +160,6 @@ input:checked +.form__sight-label::before{
   font-weight:bold;
   box-sizing: border-box;
 }
+.form__required{
+  display:none;
+}

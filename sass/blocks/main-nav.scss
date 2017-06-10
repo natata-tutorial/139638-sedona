@@ -23,10 +23,15 @@ position:relative;
     color:black;
     font-size:14px;
     border-bottom:none;
-    margin-left:50px;
-    margin-right:27px;
+    margin-left: 47px;
+    margin-right: 24px;
     &:nth-child(3){
-      margin-right:111px;
+      margin-right: 57px;
+      margin-left: 52px;
+    }
+    &:nth-child(4){
+      margin-right:0;
+      margin-left: 149px;
     }
   }
   &:nth-child(2){

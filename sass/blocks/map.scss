@@ -7,6 +7,11 @@
   font-size:21px;
   font-weight:700;
   margin:0;
+  @media (min-width: $tablet-width){
+    font-size:30px;
+    line-height:26px;
+    margin:27px 0 20px;
+  }
 }
 .map__text{
   font-size:14px;
@@ -14,6 +19,10 @@
   margin-top:20px;
   margin-bottom:35px;
   color:$text-color;
+   @media (min-width: $tablet-width){
+     margin:35px 40px 41px;
+     padding: 0 100px;
+   }
 }
 .map__photo{
   background-image: url(../img/bg-map-mobile@1x.jpg);
@@ -32,4 +41,12 @@
   height:100%;
   position:absolute;
   left:0;
+}
+@media (min-width: $tablet-width){
+  .text__br{
+    margin: 75px;
+  }
+  .map{
+    padding-bottom:0;
+  }
 }

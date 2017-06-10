@@ -18,20 +18,33 @@
   }
 .reason__photo{
   display:block;
+  @media (min-width: $tablet-width){
+    width:512px;
+  }
 }
 .reason__title{
   padding:38px 20px 0; 
   font-size:18px;
   margin:0;
+  @media (min-width: $tablet-width){
+    font-size:21px;
+    padding:45px 45px 0;
+  }
 }
 .reason--bg-grey .reason__title{
   padding:28px 20px 0;
+   @media (min-width: $tablet-width){
+    padding: 42px 50px 0;
+   }
 }
 .reason--bg-grey .reason__number{
   color:$text-color;
 }
 .reason__number{
   font-size:14px;
+  @media (min-width: $tablet-width){
+    margin-bottom:25px;
+  }
 }
 .reason__text{
   font-size:14px;
@@ -41,16 +54,36 @@
   line-height:21px;
   &--bord-bot{
     border-bottom: 1px solid #d6d6d6;
-    
+      @media (min-width: $tablet-width){
+        border-bottom:none;
+    }
+    }
+  @media (min-width: $tablet-width){
+    padding:0px 25px 45px;
   }
 }
 .reason--bg-grey  .reason__text{
   padding:4px 15px 30px;
   color:$text-color;
+    @media (min-width: $tablet-width){
+      padding: 0px 20px 44px 31px;
+  }
 }
-
-  .reason--bg-grey {
+.reason--bg-grey {
     @media (min-width: $tablet-width){
     flex-basis:33%;
   }
+}
+@media (min-width: $tablet-width){
+  .reason__about--devil{
+    order:2;
   }
+  .reason__text--beuaty-road{
+    margin:0 30px;
+  } 
+}
+.reason__about--devil .reason__text{
+  line-height:20px;
+  padding-top: 8px;
+padding-bottom: 39px;
+}
