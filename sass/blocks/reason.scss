@@ -3,8 +3,8 @@
   @media (min-width: $tablet-width){
   display:flex;
   flex-wrap:wrap;
-  width:100%
-}
+  width:100%;
+  }
 }
 .reason__about{
   text-align:center;
@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width){
     flex-basis:256px;
   }
-  }
+}
 .reason__photo{
   display:block;
   @media (min-width: $tablet-width){
@@ -33,9 +33,9 @@
 }
 .reason--bg-grey .reason__title{
   padding:28px 20px 0;
-   @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width){
     padding: 42px 50px 0;
-   }
+  }
 }
 .reason--bg-grey .reason__number{
   color:$text-color;
@@ -54,10 +54,10 @@
   line-height:21px;
   &--bord-bot{
     border-bottom: 1px solid #d6d6d6;
-      @media (min-width: $tablet-width){
-        border-bottom:none;
+    @media (min-width: $tablet-width){
+      border-bottom:none;
     }
-    }
+  }
   @media (min-width: $tablet-width){
     padding:0px 25px 45px;
   }
@@ -65,13 +65,13 @@
 .reason--bg-grey  .reason__text{
   padding:4px 15px 30px;
   color:$text-color;
-    @media (min-width: $tablet-width){
-      padding: 0px 20px 44px 31px;
+  @media (min-width: $tablet-width){
+    padding: 0px 20px 44px 31px;
   }
 }
 .reason--bg-grey {
-    @media (min-width: $tablet-width){
-    flex-basis:33%;
+  @media (min-width: $tablet-width){
+  flex-basis:33%;
   }
 }
 @media (min-width: $tablet-width){
@@ -85,5 +85,5 @@
 .reason__about--devil .reason__text{
   line-height:20px;
   padding-top: 8px;
-padding-bottom: 39px;
+  padding-bottom: 39px;
 }

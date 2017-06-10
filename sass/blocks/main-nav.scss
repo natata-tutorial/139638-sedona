@@ -1,13 +1,12 @@
 .main-nav{
-text-align:center;
-position:relative;
-@media (min-width: $tablet-width){
-  display:flex;
-  background:#ffffff;
-  justify-content:space-between;
+  text-align:center;
+  position:relative;
+  @media (min-width: $tablet-width){
+    display:flex;
+    background:#ffffff;
+    justify-content:space-between;
+  }
 }
-}
-
 .main-nav__link{
   font-size:18px;
   font-weight:700;
@@ -35,10 +34,11 @@ position:relative;
     }
   }
   &:nth-child(2){
-  border-top:none;} 
+  border-top:none;
+  } 
   &:last-child{
   border-bottom:none;
-}
+  }
 }
 .main-nav__close{
   position:absolute;

@@ -1,12 +1,11 @@
 .form form{
   background-color:#ffffff;
-    @media (min-width: $tablet-width){
-      display:flex;
-      flex-wrap:wrap;
-      padding:0 60px;
-    }
+  @media (min-width: $tablet-width){
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 60px;
+  }
 }
-
 .form__group{
   border-bottom: 1px solid #e5e5e5;
   &.form__group--effect{
@@ -123,12 +122,12 @@ input +.form__effect-label::before{
   background-color:#f2f2f2;
   border-radius:50%;
   top: -16px;
-left: -79px;
+  left: -79px;
 }
- input:checked +.form__effect-label::before{
+input:checked +.form__effect-label::before{
     background-image: radial-gradient(circle, #333333 9px, 
-                     rgba(255, 255, 255, 0) 9px  );
-  }
+                     rgba(255, 255, 255, 0) 9px);
+}
 .form__sight-field{
   display:none;
 }
@@ -143,10 +142,10 @@ input +.form__sight-label::before{
   border-radius:3px;
 }
 input:checked +.form__sight-label::before{
-    background-image: url(../img/icon-tick.svg);
-    background-position:50%;
-    background-repeat:no-repeat;
-  }
+  background-image: url(../img/icon-tick.svg);
+  background-position:50%;
+  background-repeat:no-repeat;
+}
 .form__feelings-field{
   padding: 22px 0 22px 20px;
   margin:20px 20px 20px;
