@@ -19,10 +19,13 @@
   margin-top:20px;
   margin-bottom:35px;
   color:$text-color;
-    @media (min-width: $tablet-width){
-      margin:35px 40px 41px;
-      padding: 0 100px;
-    }
+  @media (min-width: $tablet-width){
+    margin:35px 40px 41px;
+    padding: 0 100px;
+  }
+  @media (min-width: $desktop-width){
+    margin:35px 260px 41px;
+  }
 }
 .map__photo{
   background-image: url(../img/bg-map-mobile@1x.jpg);

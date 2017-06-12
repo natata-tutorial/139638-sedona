@@ -6,6 +6,9 @@
     display:flex;
     padding: 60px 20px 53px 0px;
   }
+  @media(min-width:$desktop-width){
+    padding: 60px 20px 75px 0px;
+  }
 }
 .advantages__title{
   padding:0px 20px 0px 48px;
@@ -34,6 +37,9 @@
       height: 75px;
       left: 90px;
     }
+    @media(min-width:$desktop-width){
+      left:159px;
+    }
   }
 }
 .advantages__title--sovenir{
@@ -53,6 +59,9 @@
       height: 77px;
       left:112px;
     }
+    @media(min-width:$desktop-width){
+      left:187px;
+    }
   }
 }
 .advantages__title--food{
@@ -70,6 +79,9 @@
       width: 82px;
       height: 74px;
       left: 96px;
+    }
+    @media(min-width:$desktop-width){
+      left:169px;
     }
   }
 }
@@ -104,5 +116,10 @@
   .advantages__item--souvenir .advantages__text{
     padding-left: 60px;
     padding-right: 15px;
+  }
+}
+@media(min-width:$desktop-width){
+  .text__br-advantages{
+    margin:65px;
   }
 }

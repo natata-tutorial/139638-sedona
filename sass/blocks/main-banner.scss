@@ -20,10 +20,16 @@
     padding: 80px 0px 87px;
   }
   .main-banner__photo--short{
-    padding: 94px 5px 155px;
+    padding: 94px 5px 116px;
     }
   .main-banner--short{
     background-position: 0px -227px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     }
+}
+@media(min-width: $desktop-width){
+  .main-banner{
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+  
 }

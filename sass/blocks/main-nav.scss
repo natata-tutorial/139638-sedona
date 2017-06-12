@@ -40,6 +40,20 @@
   border-bottom:none;
   }
 }
+@media(min-width:$desktop-width){
+  .main-nav__link{
+    margin-left: 90px;
+    margin-right: 69px;
+    &:nth-child(3){
+      margin-right: 232px;
+      margin-left: 45px;
+    }
+    &:nth-child(4){
+      margin-right:0;
+      margin-left: 101px;
+    }
+  }
+}
 .main-nav__close{
   position:absolute;
   background-image: url(../img/icon-cross.svg);
