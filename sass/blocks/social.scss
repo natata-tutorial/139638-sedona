@@ -2,6 +2,7 @@
   display:flex;
   justify-content:center;
   margin-top:40px;
+  flex-basis:33%;
 }
 .social__link{
   font-size:0;
@@ -13,15 +14,20 @@
 .social__link--twitter{
   background-image:url(../img/icon-twitter.svg);
   background-repeat:no-repeat;
-  background-position:50%
+  background-position:50%;
 }
 .social__link--facebook{
   background-image:url(../img/icon-facebook.svg);
   background-repeat:no-repeat;
-  background-position:50%
+  background-position:50%;
 }
 .social__link--youtube{
   background-image:url(../img/icon-youtube.svg);
   background-repeat:no-repeat;
-  background-position:50%
+  background-position:50%;
+}
+@media (min-width: $tablet-width){
+  .social{
+    margin:0 18px 0 0;
+  }
 }

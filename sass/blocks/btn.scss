@@ -2,15 +2,23 @@
   background-color:$grey-blue;
   display:block;
   box-sizing:border-box;
-}
-.btn{
-  &--map{
+  font-size:21px;
+  line-height:26px;
+  color:#ffffff;
+  font-weight:700;
+  padding:16px;
+  margin-bottom:50px;
+  &.btn--form{
+    border:none;
+    cursor:pointer;
+    margin-bottom:0;
     width:100%;
-    font-size:21px;
-    line-height:26px;
-    color:#ffffff;
-    font-weight:700;
-    padding:16px;
-    margin-bottom:50px
+  }
+}
+@media (min-width: $tablet-width){
+  .btn--map{
+    display:inline-block;
+    margin-bottom: 58px;
+    padding: 16px 133px 16px;
   }
 }

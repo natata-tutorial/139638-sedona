@@ -6,13 +6,22 @@
   width:$width;
   height:$height;
 }
-@mixin trangle($width: 322px){
-    content:"";
+@mixin trangle($width: 333px){
+  content:"";
   position:absolute;
   background-size:cover;
-  left:-1px;
+  left:-7px;
   top:-26px;
   width:$width;
   height:26px;
   background-repeat:no-repeat;
+}
+@mixin input($width:100%){
+    width:$width;
+  color:black;
+  padding-left:21px;
+  height:58px;
+  border:none;
+  background-color:#f2f2f2;
+  flex-grow:1;
 }
