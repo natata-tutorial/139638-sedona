@@ -11,7 +11,7 @@
   &.form__group--effect{
     padding-bottom:25px;
   }
-  &.form__group--submit{
+  &--submit{
     margin:0 20px;
     border-bottom:none;
     padding: 30px 0 65px;
@@ -20,70 +20,12 @@
     border-bottom:none;
   }
 }
-@media (min-width: $tablet-width){
-  .form__group{
-    border-bottom:none;
-  }
-  .form__group--fio{
-    flex-basis:265px;
-    order:2;
-    margin-left:auto;
-  }
-  .form__group--effect{
-    flex-basis:50%;
-    order:1;
-    position:relative;
-    &::after{
-      content:"";
-      width:1px;
-      height:70px;
-      position:absolute;
-      background-color:#e5e5e5;
-      top: 50px;
-      left: 329px;
-    }
-  }
-  .form__group--contacts{
-    order:3;
-    margin-top:23px;
-    flex-basis:100%;
-    
-  }
-  .form__title.form__title--contacts{
-    text-align:center;
-  }
-  .form__group--sight{
-    order:4;
-    display:flex;
-    flex-wrap:wrap;
-    width:100%;
-    justify-content: center;
-  }
-  .form__title.form__title--sight{
-    text-align:center;
-    padding:20px 150px;
-  }
-  .form__group--feelings{
-    order:5;
-    flex-basis:100%;
-  }
-  .form__group--submit{
-    order:6;
-  }
-}
 .form__title{
   margin:0;
   text-align:center;
   font-size:18px;
   padding:15px 20px 0;
   line-height: 26px;
-}
-@media (min-width: $tablet-width){
-  .form__title{
-    font-size:21px;
-    padding:15px 0 20px;
-    text-align:left;
-  }
 }
 .form__wrapper{
   display:flex;
@@ -104,38 +46,6 @@
     margin-left: 80px;
     margin-right:0;
     text-transform:none;
-  }
-}
-@media (min-width: $tablet-width){
-  .form__wrapper{
-    padding:0;
-    &.form__wrapper--effect{
-      margin-top:53px;
-    }
-    &.form__wrapper--fio:first-of-type{
-      margin-top:34px;
-    }
-    &.form__wrapper--contact{
-      margin-top:5px;
-      margin-bottom:30px;
-    }
-    &.form__wrapper--sight{
-      flex-basis: 150px;
-      margin: 46px 0 0 110px;
-      &:nth-child(2){
-        order:1;
-      }
-      &:nth-child(3){
-        order:3;
-      }
-       &:nth-child(4){
-        order:2;
-      }
-       &:nth-child(5){
-        order:4;
-      }
-      
-    }
   }
 }
 .form__presentation-label{
@@ -230,5 +140,102 @@ input:checked +.form__sight-label::before{
   display:none;
   @media(min-width: $tablet-width){
     display:block;
+    align-self: center;
+  }
+}
+@media (min-width: $tablet-width){
+  .form__group{
+    border-bottom:none;
+  }
+  .form__group--fio{
+    flex-basis:265px;
+    order:2;
+    margin-left:auto;
+  }
+  .form__group--effect{
+    flex-basis:50%;
+    order:1;
+    position:relative;
+    &::after{
+      content:"";
+      width:1px;
+      height:70px;
+      position:absolute;
+      background-color:#e5e5e5;
+      top: 50px;
+      left: 329px;
+    }
+  }
+  .form__group--contacts{
+    order:3;
+    margin-top:23px;
+    flex-basis:100%;
+    
+  }
+  .form__title.form__title--contacts{
+    text-align:center;
+  }
+  .form__group--sight{
+    order:4;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: center;
+  }
+  .form__title.form__title--sight{
+    text-align:center;
+    padding:20px 150px;
+  }
+  .form__group--feelings{
+    order:5;
+    flex-basis:100%;
+  }
+  .form__group--submit{
+    order:6;
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    margin:0;
+  }
+  .form__title{
+    font-size:21px;
+    padding:15px 0 20px;
+    text-align:left;
+    &--feelings{
+      text-align:center;
+    }
+  }
+  .form__wrapper{
+    padding:0;
+    &.form__wrapper--effect{
+      margin-top:53px;
+    }
+    &.form__wrapper--fio:first-of-type{
+      margin-top:34px;
+    }
+    &.form__wrapper--contact{
+      margin-top:5px;
+      margin-bottom:30px;
+    }
+    &.form__wrapper--sight{
+      flex-basis: 150px;
+      margin: 46px 0 0 110px;
+      &:nth-child(2){
+        order:1;
+      }
+      &:nth-child(3){
+        order:3;
+      }
+       &:nth-child(4){
+        order:2;
+      }
+       &:nth-child(5){
+        order:4;
+      }      
+    }
+  }
+  .form__feelings-field{
+    width:100%;
+    margin:0;
   }
 }

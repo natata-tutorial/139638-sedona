@@ -8,7 +8,7 @@
   font-weight:700;
   padding:16px;
   margin-bottom:50px;
-  &.btn--form{
+  &--form{
     border:none;
     cursor:pointer;
     margin-bottom:0;
@@ -20,6 +20,9 @@
     display:inline-block;
     margin-bottom: 58px;
     padding: 16px 133px 16px;
+  }
+  .btn--form{
+    width:324px;
   }
 }
 @media (min-width: $desktop-width){
