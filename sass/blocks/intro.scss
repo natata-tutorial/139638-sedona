@@ -6,9 +6,13 @@
   &--photo {
     padding: 35px 25px 30px;
   }
-  &.intro--form {
+  &--form {
     padding: 35px 0 15px;
     border: 1px solid #e5e5e5;
+    @media (min-width: $tablet-width){
+      padding: 73px 0 30px;
+      border:none;
+    }
   }
   &::before{
     @include trangle();
@@ -27,6 +31,9 @@
   }
   .intro--photo{
     padding: 75px 170px 70px;
+  }
+  .intro__text.intro__text--form{
+    padding:30px 165px 30px;
   }
 }
 @media(min-width: $desktop-width){

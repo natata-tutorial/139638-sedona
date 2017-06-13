@@ -9,6 +9,9 @@
     padding:36px 60px;
     text-align:left;
   }
+  @media (min-width: $desktop-width){
+    padding: 36px 40px 36px 64px;
+  }
 }
 .page-footer__hashtag{
   color:black;
@@ -18,5 +21,8 @@
   flex-basis:33%;
   @media (min-width: $tablet-width){
     padding-right:20px;
+  }
+  @media (min-width: $desktop-width){
+    padding-left: 70px;
   }
 }

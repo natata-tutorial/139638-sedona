@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
           <span class="main-nav__close"></span>
           <a class="main-nav__link" href="index.html">Главная</a>
           <a class="main-nav__link" href="photo.html">фото и видео</a>
@@ -19,7 +19,11 @@
         </nav>
         <div class="top-row">
           <a class="top-row__logo" href="index.html">
-            <img src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83">
+            </picture>
           </a>
           <button class="menu-toggle" type="button"></button>
         </div>
@@ -29,7 +33,7 @@
       </header>
       <section class="intro intro--form">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
-        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="intro__text intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
         <form method="post" action="https://echo.htmlacademy.ru/">
@@ -49,10 +53,10 @@
               </div>
           </div>
           <div class="form__group form__group--contacts">
-            <h3 class="form__title">Контактная информация:</h3>
+            <h3 class="form__title form__title--contacts">Контактная информация:</h3>
               <div class="form__wrapper form__wrapper--contact">
                 <label class="form__contacts-label" for="tel">Контактный телефон*:</label>
-                <input class="form__contacts-field" type="tel" name="tel" id="tel" placeholder="Введите номер">
+                <input class="form__contacts-field" type="tel" name="tel" id="tel" placeholder="Введите телефон">
               </div>
               <div class="form__wrapper form__wrapper--contact">
                 <label class="form__contacts-label form__contacts-label--email" for="email">Электронная почта*:</label>
@@ -75,7 +79,7 @@
               </div>
           </div>
           <div class="form__group form__group--sight">
-            <h3 class="form__title">Посещённые достопримечательности:</h3>
+            <h3 class="form__title form__title--sight">Посещённые достопримечательности:</h3>
             <div class="form__wrapper form__wrapper--sight">
               <input class="form__sight-field" type="checkbox" checked name="devil's-bridge" id="devil's-bridge">
               <label class="form__sight-label" for="devil's-bridge">Мост Дьявола</label>
@@ -112,7 +116,11 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__logo" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" alt="Логотип академии" width="40" height="40"></a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40" height="40" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
         </div>
         <section class="popup popup--error">
           <h3 class="popup__heading popup__heading--error">Что-то пошло не так!</h3>
