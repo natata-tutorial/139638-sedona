@@ -17,6 +17,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding:7px 0;
   text-transform:uppercase;
+  @media (max-width:767px){
+    @include btn-contition();
+  }
   @media (min-width: $tablet-width){
     background-color:#ffffff;
     color:black;

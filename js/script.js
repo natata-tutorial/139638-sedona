@@ -7,7 +7,11 @@ mainNav.classList.remove('main-nav--nojs');
   openLink.style.opacity = '0';
 }
 );
-  
+  closeLink.addEventListener('click', function () {
+  mainNav.classList.remove('main-nav--opened');
+  openLink.style.opacity = '1';
+  }
+);
   
   
   

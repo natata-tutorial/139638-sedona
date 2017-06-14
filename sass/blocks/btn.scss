@@ -8,6 +8,7 @@
   font-weight:700;
   padding:16px;
   margin-bottom:50px;
+  @include btn-contition();
   &--form{
     border:none;
     cursor:pointer;

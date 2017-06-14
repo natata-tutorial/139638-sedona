@@ -36,6 +36,7 @@
   margin:21px 0;
   padding:0 20px;
   align-items:center;
+  position:relative;
   justify-content: space-between;
   &.form__wrapper--fio{
     flex-wrap:nowrap;
@@ -83,6 +84,37 @@ input[placeholder], textarea[placeholder]{
 }
 .form__contacts-field{
   @include input;
+}
+.form__icon{
+  position:absolute;
+  right:24px;
+  top:24px;
+  width:58px;
+  height:58px;
+  background-color:#e6e6e6;
+  &--tel{
+    right: 20px;
+    top: 35px;
+    background-image: url(/img/icon-phone.svg);
+    background-position:50%;
+    background-repeat:no-repeat;
+  }
+  &--email{
+    right: 20px;
+    background-image: url(/img/icon-mail.svg);
+    background-position:50%;
+    background-repeat:no-repeat;
+  }
+}
+@media (min-width: $tablet-width){
+  .form__icon--tel, .form__icon--email{
+    right:0;
+  }
+}
+@media (min-width: $desktop-width){
+  .form__icon--tel, .form__icon--email{
+    top:1px;
+  }
 }
 .form__effect-field{
   display:none;
