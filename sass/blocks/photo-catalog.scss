@@ -124,13 +124,12 @@
   .photo-catalog__item{
     flex-basis:400px;
   }
-   .photo-catalog__item:nth-of-type(3) .photo-catalog__inner{
+  .photo-catalog__item:nth-of-type(3) .photo-catalog__inner{
     width:100%;
     background-color:rgba(0,0,0, 0.3);
-   }
-   .photo-catalog__item:first-of-type .photo-catalog__rating{
+  }
+  .photo-catalog__item:first-of-type .photo-catalog__rating{
     top:347px;
     right:20px;
   }
 }
-
