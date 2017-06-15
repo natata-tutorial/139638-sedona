@@ -37,7 +37,7 @@
   margin:0 -20px;
   position:relative;
   @media (min-width: $tablet-width){
-  background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-image: url(../img/bg-map-tablet@1x.jpg);
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
       background-size: cover;
@@ -48,7 +48,7 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
       background-size: cover;
-    }  
+    }
   }
 }
 .map__marker{
