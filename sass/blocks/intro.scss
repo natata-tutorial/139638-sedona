@@ -6,14 +6,28 @@
   &--photo {
     padding: 35px 25px 30px;
   }
-  &.intro--form {
+  &--form {
     padding: 35px 0 15px;
     border: 1px solid #e5e5e5;
+    @media (min-width: $tablet-width){
+      padding: 73px 0 30px;
+      border:none;
+    }
+    @media (min-width: $desktop-width){
+      padding: 110px 0 30px;
+    }
   }
   &::before{
     @include trangle();
     background-image: url(../img/bg-intro-triangle-mobile.svg);
   }
+}
+.intro__text{
+  font-size:14px;
+  padding:29px 0 0;
+  margin:0;
+  line-height:24px;
+  color:$text-color;
 }
 @media (min-width: $tablet-width){
   .intro{
@@ -28,6 +42,9 @@
   .intro--photo{
     padding: 75px 170px 70px;
   }
+  .intro__text.intro__text--form{
+    padding:30px 165px 30px;
+  }
 }
 @media(min-width: $desktop-width){
   .intro{
@@ -35,6 +52,15 @@
       width:1200px;
       left:0;
     }
+    &--photo{
+      padding-top:110px;
+    }
+  }
+  .intro__text.intro__text--form{
+    padding: 30px 380px;
+  }
+  .intro__text--photo{
+    padding: 30px 210px 4px;
   }
 }
 .intro__title{
@@ -57,11 +83,4 @@
       margin:0 215px;
     }
   }
-}
-.intro__text{
-  font-size:14px;
-  padding:29px 0 0;
-  margin:0;
-  line-height:24px;
-  color:$text-color;
 }

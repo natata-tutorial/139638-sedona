@@ -8,7 +8,8 @@
   font-weight:700;
   padding:16px;
   margin-bottom:50px;
-  &.btn--form{
+  @include btn-contition();
+  &--form{
     border:none;
     cursor:pointer;
     margin-bottom:0;
@@ -20,5 +21,16 @@
     display:inline-block;
     margin-bottom: 58px;
     padding: 16px 133px 16px;
+  }
+  .btn--form{
+    width:324px;
+  }
+}
+@media (min-width: $desktop-width){
+  .btn--map{
+    margin-bottom:65px;
+  }
+  .btn--form{
+    width:480px;
   }
 }

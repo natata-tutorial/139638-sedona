@@ -8,6 +8,11 @@
     padding: 70px 20px 36px;
   }
 }
+@media (min-width: $desktop-width){
+  .video{
+    padding: 63px 20px 77px;
+  }
+}
 .video__title{
   margin:0;
   font-size:18px;
@@ -29,8 +34,13 @@
     padding:14px 145px;
   }
 }
+@media (min-width: $desktop-width){
+  .video__text{
+    padding:14px 360px;
+  }
+}
 .video__photo{
-    margin:0 -20px;
+    margin:21px -20px -5px;
     position:relative;
 }
 @media (min-width: $tablet-width){
@@ -52,6 +62,11 @@
     left:0;
     width:100%;
     bottom:-15px;
+  }
+}
+@media (min-width: $desktop-width){
+  .video__controls{
+    padding:0 200px;
   }
 }
 .video__controls-top{
