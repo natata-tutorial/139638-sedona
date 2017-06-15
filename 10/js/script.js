@@ -12,8 +12,3 @@ mainNav.classList.remove('main-nav--nojs');
   openLink.style.opacity = '1';
   }
 );
-  
-  
-  
-
-
