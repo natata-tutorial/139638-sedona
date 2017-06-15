@@ -34,3 +34,12 @@
     color:rgba(255,255,255, 0.3);
   }
 }
+@mixin form-title-decor($top:0, $left:0, $width:125px){
+  content:"";
+  position:absolute;
+  width:$width;
+  height:1px;
+  background-color:#dbdbdb;
+  top: $top;
+  left:$left;
+}

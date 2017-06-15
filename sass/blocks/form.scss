@@ -95,13 +95,13 @@ input[placeholder], textarea[placeholder]{
   &--tel{
     right: 20px;
     top: 35px;
-    background-image: url(/img/icon-phone.svg);
+    background-image: url(../img/icon-phone.svg);
     background-position:50%;
     background-repeat:no-repeat;
   }
   &--email{
     right: 20px;
-    background-image: url(/img/icon-mail.svg);
+    background-image: url(../img/icon-mail.svg);
     background-position:50%;
     background-repeat:no-repeat;
   }
@@ -197,11 +197,11 @@ input:checked +.form__sight-label::before{
     &::after{
       content:"";
       width:1px;
-      height:70px;
+      height:293px;
       position:absolute;
       background-color:#e5e5e5;
-      top: 50px;
-      left: 329px;
+      top: 25px;
+      left: 323px;
     }
   }
   .form__group--contacts{
@@ -209,8 +209,41 @@ input:checked +.form__sight-label::before{
     margin-top:23px;
     flex-basis:100%;
   }
-  .form__title.form__title--contacts{
+    .form__title{
+    font-size:21px;
+    padding:15px 0 20px;
+    text-align:left;
+    &--feelings{
+      text-align:center;
+      position:relative;
+      &::before{
+        @include form-title-decor(27px);
+      }
+      &::after{
+        @include form-title-decor(27px, 648px-125px);
+      }
+    }
+    &--sight{
+      text-align:center;
+      padding:20px 150px;
+      position:relative;
+      &::before{
+        @include form-title-decor(46px);
+      }
+      &::after{
+        @include form-title-decor(46px, 648px-125px);
+      }
+    }
+    &--contacts{
     text-align:center;
+    position:relative;
+      &::before{
+        @include form-title-decor(28px);
+      }
+      &::after{
+        @include form-title-decor(28px, 648px-125px);
+      }
+    }
   }
   .form__group--sight{
     order:4;
@@ -231,18 +264,6 @@ input:checked +.form__sight-label::before{
     justify-content:space-between;
     margin:0;
     padding-bottom:60px;
-  }
-  .form__title{
-    font-size:21px;
-    padding:15px 0 20px;
-    text-align:left;
-    &--feelings{
-      text-align:center;
-    }
-    &--sight{
-      text-align:center;
-    padding:20px 150px;
-    }
   }
   .form__wrapper{
     padding:0;
@@ -284,10 +305,33 @@ input:checked +.form__sight-label::before{
   .form__title{
     padding:0 0 20px;
     &--effect{
-      margin-left:75px;
+      margin-left:75px;      
     }
     &--sight{
       padding: 20px 280px;
+      &::before{
+        @include form-title-decor(47px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(47px, 960px-280px, 280px);
+      }
+    }
+    &--contacts{
+      width:100%;
+      &::before{
+        @include form-title-decor(14px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(14px, 960px-280px, 280px);
+      }
+    }
+    &--feelings{
+      &::before{
+        @include form-title-decor(12px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(12px, 960px-280px, 280px);
+      }
     }
   }
   .form__group--fio{
@@ -302,9 +346,6 @@ input:checked +.form__sight-label::before{
   .form__group--sight{
     justify-content:flex-start;
   }
-  .form__title.form__title--contacts{
-    width:100%;
-  }
   .form__contacts-field{
     width:auto;
     margin-left: 15px;
@@ -317,6 +358,17 @@ input:checked +.form__sight-label::before{
     margin-top: 55px;
     &:nth-of-type(2){
       flex-basis:480px;
+    }
+  }
+  .form__group--effect{
+    &::after{
+      content:"";
+      width:1px;
+      height:293px;
+      position:absolute;
+      background-color:#e5e5e5;
+      top: 6px;
+      left: 480px;
     }
   }
   .form__wrapper--sight{
