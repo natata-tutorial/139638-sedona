@@ -27,6 +27,12 @@
     border-bottom:none;
     margin-left: 47px;
     margin-right: 24px;
+    &:hover{
+      color:$grey-blue;
+    }
+    &:active{
+      opacity:0.3;
+    }
     &:nth-child(3){
       margin-right: 57px;
       margin-left: 52px;
@@ -34,6 +40,15 @@
     &:nth-child(4){
       margin-right:0;
       margin-left: 149px;
+    }
+    &--active{
+      color:#766357;
+      &:hover{
+        color:#604e43;
+      }
+      &:active{
+        opacity:0.3;
+      }
     }
   }
   &:nth-child(2){
