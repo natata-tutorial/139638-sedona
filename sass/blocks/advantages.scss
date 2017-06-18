@@ -88,7 +88,7 @@
 }
 .advantages__text{
   margin:0;
-  padding: 0 38px 10px 45px;
+  padding: 0px 25px 10px 45px;
   font-size:14px;
   line-height:21px;
   color:$text-color;
@@ -117,6 +117,9 @@
   .advantages__item--souvenir .advantages__text{
     padding-left: 60px;
     padding-right: 15px;
+  }
+  .advantages__text{
+    padding: 0px 35px 10px 45px;
   }
 }
 @media(min-width:$desktop-width){

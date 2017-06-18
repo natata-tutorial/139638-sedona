@@ -12,13 +12,13 @@
       <header class="page-header">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <span class="main-nav__close"></span>
-          <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+          <a class="main-nav__link main-nav__link--active">Главная</a>
           <a class="main-nav__link" href="photo.html">фото и видео</a>
           <a class="main-nav__link" href="form.html">Форма отзыва</a>
           <a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a>
         </nav>
         <div class="top-row">
-          <a class="top-row__logo" href="index.html">
+          <a class="top-row__logo">
             <picture>
               <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
@@ -43,10 +43,10 @@
             <p class="reason__text"> Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-city-dekstop@2x.jpg 2x, img/photo-city-dekstop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/photo-city@1x.jpg">
+            <source media="(min-width:1100px)" srcset="img/photo-city-dekstop@2x.jpg 2x, img/photo-city-dekstop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-city-tablet@2x.jpg 2x, img/photo-city-tablet@1x.jpg 1x">
             <source media="(min-width:320px)" srcset="img/photo-city-mobile@2x.jpg 2x, img/photo-city-mobile@1x.jpg 1x">
-            <img class="reason__photo" src="img/photo-city@1x.jpg" width="320" height="260" alt="Город седона">
+            <img class="reason__photo" src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Город седона">
           </picture>
           <ul class="advantages">
             <li class="advantages__item advantages__item--house">
@@ -71,9 +71,9 @@
           </div>
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-bridge-dekstop@2x.jpg 2x, img/photo-bridge-dekstop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x" >
             <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg">
-            <img class="reason__photo reason__photo--devil" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Каньон">
+            <img class="reason__photo reason__photo--devil" width="320" height="260" src="img/photo-bridge-mobile@1x.jpg" alt="Каньон">
           </picture>
         </li>
         <li class="reason reason--bg-grey">
@@ -102,10 +102,9 @@
         <div class="map__about">
           <p class="map__title">Заинтересовались?</p>
           <p class="map__text"><span class="text__br"> Укажите предпологаемые даты поездки,</span> и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-          <a class="btn btn--map" href="/">Найти гостиницу</a>
+          <button class="btn btn--map" >Найти гостиницу</button>
         </div>
         <div class="map__photo">
-       
           <span class="map__marker"></span>
         </div>
       </div>

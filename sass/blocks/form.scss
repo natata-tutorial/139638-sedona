@@ -68,10 +68,19 @@ input[placeholder], textarea[placeholder]{
   color:black;
   margin-left:14px;
   padding-left:21px;
-  height:58px;
+  height:60px;
   border:none;
   background-color:#f2f2f2;
+  box-sizing:border-box;
   flex-grow:1;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__contacts-label{
   font-size:14px;
@@ -84,6 +93,15 @@ input[placeholder], textarea[placeholder]{
 }
 .form__contacts-field{
   @include input;
+  box-sizing:border-box;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__icon{
   position:absolute;
@@ -138,8 +156,12 @@ input +.form__effect-label::before{
   left: -79px;
 }
 input:checked +.form__effect-label::before{
-    background-image: radial-gradient(circle, #333333 9px,
-                      rgba(255, 255, 255, 0) 9px);
+  background-image: radial-gradient(circle, #333333 9px,
+                    rgba(255, 255, 255, 0) 9px);
+}
+input:checked +.form__effect-label:active::before{
+  background-image: radial-gradient(circle, rgba(0,0,0, 0.3) 9px,
+                    rgba(255, 255, 255, 0) 9px);
 }
 .form__sight-field{
   display:none;
@@ -154,10 +176,19 @@ input +.form__sight-label::before{
   left: -79px;
   border-radius:3px;
 }
+input +.form__sight-label:hover::before, input +.form__effect-label:hover::before {
+  background-color:#e5e5e5;
+}
+input +.form__sight-label:active::before, input +.form__effect-label:active::before {
+  background-color:#d5d5d5;
+}
 input:checked +.form__sight-label::before{
   background-image: url(../img/icon-tick.svg);
   background-position:50%;
   background-repeat:no-repeat;
+}
+input:checked +.form__sight-label:active::before{
+    background-image: url(../img/icon-tick1.svg);
 }
 .form__feelings-field{
   padding: 17px 0 22px 20px;
@@ -171,6 +202,14 @@ input:checked +.form__sight-label::before{
   font-size:17px;
   font-weight:bold;
   box-sizing: border-box;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__required{
   display:none;
@@ -305,7 +344,7 @@ input:checked +.form__sight-label::before{
   .form__title{
     padding:0 0 20px;
     &--effect{
-      margin-left:75px;      
+      margin-left:75px;
     }
     &--sight{
       padding: 20px 280px;
@@ -376,7 +415,7 @@ input:checked +.form__sight-label::before{
     margin-bottom: 12px;
     &:nth-child(2){
       margin-right: 90px;
-margin-left: 80px;
+      margin-left: 80px;
     }
     &:nth-child(3){
       margin-right: 20px;

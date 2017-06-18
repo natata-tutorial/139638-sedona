@@ -35,7 +35,7 @@ formSubmit.addEventListener('submit', function (event) {
   }
   else {
     event.preventDefault();
-    popupSuc.classList.add('popup-show');    
+    popupSuc.classList.add('popup-show');
   }
   popupOverlay.classList.add('popup-show');
 });
