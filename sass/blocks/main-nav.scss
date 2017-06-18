@@ -84,23 +84,20 @@
   }
 }
 @media (max-width:767px){
-   .main-nav--closed{
-    animation-name: menuClosed;
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
+  .main-nav--closed{
+  display:none;
   }
   .main-nav--opened{
     display:block;
     animation-name: menuOpen;
     animation-duration: 1s;
-  }  
+  }
+  .main-nav--nojs{
+    display:block;
+  }
 }
 //Анимация
 @keyframes menuOpen{
-   0% {transform: translateY(300px);}
-   100% {transform: translateY(0);}
-}
-@keyframes menuClosed{
-   0% {transform: translateY(0);}
-   100% {transform: translateY(300px); }
+  0% {transform: translateY(300px);}
+  100% {transform: translateY(0);}
 }

@@ -7,13 +7,24 @@
   color:#ffffff;
   font-weight:700;
   padding:16px;
+  border:none;
   margin-bottom:50px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform:uppercase;
+  outline:none;
   @include btn-contition();
+  &:disabled{
+    background-color:#e5e5e5;
+  }
   &--form{
     border:none;
     cursor:pointer;
     margin-bottom:0;
     width:100%;
+  }
+  &--map{
+    display:inline-block;
+    width: 100%;
   }
 }
 @media (min-width: $tablet-width){
@@ -21,6 +32,7 @@
     display:inline-block;
     margin-bottom: 58px;
     padding: 16px 133px 16px;
+    width: auto;
   }
   .btn--form{
     width:324px;

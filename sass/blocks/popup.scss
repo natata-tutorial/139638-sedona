@@ -12,7 +12,7 @@
 
   &--success {
     display: none;
-    transform: translateX(-160px); 
+    transform: translateX(-160px);
   }
   &--error {
     display: none;
@@ -197,10 +197,7 @@
 // Анимация
 .popup--error, .popup--success{
   animation-name: popup;
-  animation-duration: 4s;
-    animation-fill-mode:forwards;
-  animation-iteration-count:2;
-  animation-direction:alternate;
+  animation-duration: 2s;
 }
 @keyframes popup{
   0% {transform: translateY(-5000px) translateX(-200px)}

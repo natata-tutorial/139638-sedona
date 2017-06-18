@@ -3,6 +3,7 @@
   margin:0;
   position:relative;
   background-color:$grey-color;
+  z-index: 6;
   &::before{
     @include trangle();
     background-image: url(../img/bg-intro-triangle-mobile-blue.svg);
