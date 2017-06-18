@@ -3,6 +3,8 @@
   background-size: cover;
   background-position: top;
   text-align:center;
+  position:relative;
+  z-index:5;
   &--short{
     background-position: -224px 160px;
     background-size:auto;

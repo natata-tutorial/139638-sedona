@@ -83,3 +83,24 @@
     display:none;
   }
 }
+@media (max-width:767px){
+   .main-nav--closed{
+    animation-name: menuClosed;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+  }
+  .main-nav--opened{
+    display:block;
+    animation-name: menuOpen;
+    animation-duration: 1s;
+  }  
+}
+//Анимация
+@keyframes menuOpen{
+   0% {transform: translateY(300px);}
+   100% {transform: translateY(0);}
+}
+@keyframes menuClosed{
+   0% {transform: translateY(0);}
+   100% {transform: translateY(300px); }
+}

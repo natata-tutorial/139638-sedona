@@ -150,15 +150,15 @@
 input[type=range]{
   width: 235px;
   -webkit-appearance: none;
-  height:30px;
+  height: 45px;
   background-color:transparent;
   outline:none;
   @media (min-width: $tablet-width){
     width: 385px;
     margin-top: 6px;
-height: 80px;
-margin-right: 73px;
-overflow: hidden;
+    height: 80px;
+    margin-right: 73px;
+    overflow: hidden;
   }
   @media (min-width: $desktop-width){
     width:540px;
@@ -168,9 +168,9 @@ input[type=range]::-moz-range-track {
   background-color:rgba(255,255,255, 0.2);
  }
 input[type=range]::-moz-range-thumb {
-     background-color:#ffffff;
-     height:9px;
-     width:9px;
+   background-color:#ffffff;
+   height:9px;
+   width:9px;
 }
 input[type=range]::-webkit-slider-thumb {
 

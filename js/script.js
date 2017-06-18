@@ -4,11 +4,13 @@ var openLink = document.querySelector('.menu-toggle');
 mainNav.classList.remove('main-nav--nojs');
   openLink.addEventListener('click', function () {
   mainNav.classList.add('main-nav--opened');
+  mainNav.classList.remove('main-nav--closed');
   openLink.style.opacity = '0';
 }
 );
   closeLink.addEventListener('click', function () {
   mainNav.classList.remove('main-nav--opened');
+  mainNav.classList.add('main-nav--closed');
   openLink.style.opacity = '1';
   }
 );
