@@ -14,7 +14,7 @@
           <span class="main-nav__close"></span>
           <a class="main-nav__link" href="index.html">Главная</a>
           <a class="main-nav__link" href="photo.html">фото и видео</a>
-          <a class="main-nav__link main-nav__link--active" href="#">Форма отзыва</a>
+          <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
           <a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a>
         </nav>
         <div class="top-row">
@@ -36,16 +36,16 @@
         <p class="intro__text intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
-        <form method="post" action="https://echo.htmlacademy.ru/">
+        <form class="form-js" method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__group form__group--fio">
             <h3 class="form__title form__title--fio">Представьтесь:</h3>
               <div class="form__wrapper form__wrapper--fio">
                 <label class="form__presentation-label" for="name">Имя*:</label>
-                <input class="form__presentation-field" required type="text" name="name" id="name" placeholder="Петр">
+                <input class="form__presentation-field" type="text" name="name" id="name" placeholder="Петр">
               </div>
               <div class="form__wrapper form__wrapper--fio">
                 <label class="form__presentation-label" for="second-name">Фамилия*:</label>
-                <input class="form__presentation-field" required type="text" name="second-name" id="second-name" placeholder="Иванов">
+                <input class="form__presentation-field" type="text" name="second-name" id="second-name" placeholder="Иванов">
               </div>
               <div class="form__wrapper form__wrapper--fio">
                 <label class="form__presentation-label" for="patronymic">Отчество:</label>
@@ -127,17 +127,19 @@
       </footer>
     </div>
     <section class="popup popup--error">
-          <h3 class="popup__heading popup__heading--error">Что-то пошло не так!</h3>
-          <p class="popup__text"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить </p>
-          <button class="btn popup--error__button" type="button">OK</button>
-        </section>
-        <section class="popup popup--success">
-          <h3 class="popup__heading popup__heading--success">Ваш отзыв отправлен!</h3>
-          <p class="popup__text popup__text--success"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте. </p>
-          <div class="popup__button-wrapper">
-            <button class="btn popup--success__button" type="button">Закрыть окно</button>
-          </div>
-        </section>
+      <h3 class="popup__heading popup__heading--error">Что-то пошло не так!</h3>
+      <p class="popup__text"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить </p>
+      <button class="btn popup--error__button" type="button">OK</button>
+    </section>
+    <section class="popup popup--success">
+      <h3 class="popup__heading popup__heading--success">Ваш отзыв отправлен!</h3>
+      <p class="popup__text popup__text--success"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте. </p>
+      <div class="popup__button-wrapper">
+        <button class="btn popup--success__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+    <div class="popup popup--overlay"></div>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/picturefill.js" type="text/javascript"></script>
   </body>
 </html>

@@ -17,10 +17,10 @@
   background-repeat:no-repeat;
 }
 @mixin input($width:100%){
-    width:$width;
+  width:$width;
   color:black;
   padding-left:21px;
-  height:58px;
+  height:60px;
   border:none;
   background-color:#f2f2f2;
   flex-grow:1;
@@ -33,4 +33,13 @@
     background-color:#5496bd;
     color:rgba(255,255,255, 0.3);
   }
+}
+@mixin form-title-decor($top:0, $left:0, $width:125px){
+  content:"";
+  position:absolute;
+  width:$width;
+  height:1px;
+  background-color:#dbdbdb;
+  top: $top;
+  left:$left;
 }

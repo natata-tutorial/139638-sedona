@@ -68,10 +68,19 @@ input[placeholder], textarea[placeholder]{
   color:black;
   margin-left:14px;
   padding-left:21px;
-  height:58px;
+  height:60px;
   border:none;
   background-color:#f2f2f2;
+  box-sizing:border-box;
   flex-grow:1;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__contacts-label{
   font-size:14px;
@@ -84,6 +93,15 @@ input[placeholder], textarea[placeholder]{
 }
 .form__contacts-field{
   @include input;
+  box-sizing:border-box;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__icon{
   position:absolute;
@@ -95,13 +113,13 @@ input[placeholder], textarea[placeholder]{
   &--tel{
     right: 20px;
     top: 35px;
-    background-image: url(/img/icon-phone.svg);
+    background-image: url(../img/icon-phone.svg);
     background-position:50%;
     background-repeat:no-repeat;
   }
   &--email{
     right: 20px;
-    background-image: url(/img/icon-mail.svg);
+    background-image: url(../img/icon-mail.svg);
     background-position:50%;
     background-repeat:no-repeat;
   }
@@ -138,8 +156,12 @@ input +.form__effect-label::before{
   left: -79px;
 }
 input:checked +.form__effect-label::before{
-    background-image: radial-gradient(circle, #333333 9px,
-                      rgba(255, 255, 255, 0) 9px);
+  background-image: radial-gradient(circle, #333333 9px,
+                    rgba(255, 255, 255, 0) 9px);
+}
+input:checked +.form__effect-label:active::before{
+  background-image: radial-gradient(circle, rgba(0,0,0, 0.3) 9px,
+                    rgba(255, 255, 255, 0) 9px);
 }
 .form__sight-field{
   display:none;
@@ -154,10 +176,19 @@ input +.form__sight-label::before{
   left: -79px;
   border-radius:3px;
 }
+input +.form__sight-label:hover::before, input +.form__effect-label:hover::before {
+  background-color:#e5e5e5;
+}
+input +.form__sight-label:active::before, input +.form__effect-label:active::before {
+  background-color:#d5d5d5;
+}
 input:checked +.form__sight-label::before{
   background-image: url(../img/icon-tick.svg);
   background-position:50%;
   background-repeat:no-repeat;
+}
+input:checked +.form__sight-label:active::before{
+    background-image: url(../img/icon-tick1.svg);
 }
 .form__feelings-field{
   padding: 17px 0 22px 20px;
@@ -171,6 +202,14 @@ input:checked +.form__sight-label::before{
   font-size:17px;
   font-weight:bold;
   box-sizing: border-box;
+  &:hover{
+    background-color:#e5e5e5;
+  }
+  &:focus{
+    background-color:#ffffff;
+    border: 4px solid #e5e5e5;
+    outline:none;
+  }
 }
 .form__required{
   display:none;
@@ -197,11 +236,11 @@ input:checked +.form__sight-label::before{
     &::after{
       content:"";
       width:1px;
-      height:70px;
+      height:293px;
       position:absolute;
       background-color:#e5e5e5;
-      top: 50px;
-      left: 329px;
+      top: 25px;
+      left: 323px;
     }
   }
   .form__group--contacts{
@@ -209,8 +248,41 @@ input:checked +.form__sight-label::before{
     margin-top:23px;
     flex-basis:100%;
   }
-  .form__title.form__title--contacts{
+    .form__title{
+    font-size:21px;
+    padding:15px 0 20px;
+    text-align:left;
+    &--feelings{
+      text-align:center;
+      position:relative;
+      &::before{
+        @include form-title-decor(27px);
+      }
+      &::after{
+        @include form-title-decor(27px, 648px-125px);
+      }
+    }
+    &--sight{
+      text-align:center;
+      padding:20px 150px;
+      position:relative;
+      &::before{
+        @include form-title-decor(46px);
+      }
+      &::after{
+        @include form-title-decor(46px, 648px-125px);
+      }
+    }
+    &--contacts{
     text-align:center;
+    position:relative;
+      &::before{
+        @include form-title-decor(28px);
+      }
+      &::after{
+        @include form-title-decor(28px, 648px-125px);
+      }
+    }
   }
   .form__group--sight{
     order:4;
@@ -231,18 +303,6 @@ input:checked +.form__sight-label::before{
     justify-content:space-between;
     margin:0;
     padding-bottom:60px;
-  }
-  .form__title{
-    font-size:21px;
-    padding:15px 0 20px;
-    text-align:left;
-    &--feelings{
-      text-align:center;
-    }
-    &--sight{
-      text-align:center;
-    padding:20px 150px;
-    }
   }
   .form__wrapper{
     padding:0;
@@ -288,6 +348,29 @@ input:checked +.form__sight-label::before{
     }
     &--sight{
       padding: 20px 280px;
+      &::before{
+        @include form-title-decor(47px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(47px, 960px-280px, 280px);
+      }
+    }
+    &--contacts{
+      width:100%;
+      &::before{
+        @include form-title-decor(14px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(14px, 960px-280px, 280px);
+      }
+    }
+    &--feelings{
+      &::before{
+        @include form-title-decor(12px, 0, 280px);
+      }
+      &::after{
+        @include form-title-decor(12px, 960px-280px, 280px);
+      }
     }
   }
   .form__group--fio{
@@ -301,9 +384,6 @@ input:checked +.form__sight-label::before{
   }
   .form__group--sight{
     justify-content:flex-start;
-  }
-  .form__title.form__title--contacts{
-    width:100%;
   }
   .form__contacts-field{
     width:auto;
@@ -319,12 +399,23 @@ input:checked +.form__sight-label::before{
       flex-basis:480px;
     }
   }
+  .form__group--effect{
+    &::after{
+      content:"";
+      width:1px;
+      height:293px;
+      position:absolute;
+      background-color:#e5e5e5;
+      top: 6px;
+      left: 480px;
+    }
+  }
   .form__wrapper--sight{
     margin-top:45px;
     margin-bottom: 12px;
     &:nth-child(2){
       margin-right: 90px;
-margin-left: 80px;
+      margin-left: 80px;
     }
     &:nth-child(3){
       margin-right: 20px;
