@@ -72,7 +72,9 @@
       padding-bottom: 16px;
       transform: translateX(-200px);
     }
-
+    &--overlay{
+    	left:0;
+    }
   }
   .popup__heading {
     margin-bottom: 29px;
@@ -181,7 +183,7 @@
     width: 460px;
   }
 }
-popup.popup--overlay{
+.popup--overlay{
   position:fixed;
   width:100%;
   height:100%;
