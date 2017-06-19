@@ -13,6 +13,7 @@ var svgmin = require("gulp-svgmin");
 var del = require("del");
 var minify = require("gulp-csso");
 var mqpacker = require("css-mqpacker");
+var run = require("run-sequence");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
