@@ -20,9 +20,9 @@
     "run-sequence": "1.2.2"
   },
   "scripts": {
-    "build": "gulp style", -> gulp build
-    "start": "gulp serve",
-    "test": "editorconfig-cli"
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
