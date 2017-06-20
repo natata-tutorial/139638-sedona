@@ -72,7 +72,9 @@
       padding-bottom: 16px;
       transform: translateX(-200px);
     }
-
+    &--overlay{
+      left:0;
+    }
   }
   .popup__heading {
     margin-bottom: 29px;
