@@ -6,7 +6,7 @@
   width:$width;
   height:$height;
 }
-@mixin trangle($width: 333px){
+@mixin triangle($width: 333px){
   content:"";
   position:absolute;
   background-size:cover;
@@ -25,7 +25,7 @@
   background-color:#f2f2f2;
   flex-grow:1;
 }
-@mixin btn-contition(){
+@mixin btn-condition(){
   &:hover{
     background-color:#669ec0;
   }

@@ -5,7 +5,7 @@
   background-color:$grey-color;
   z-index: 6;
   &::before{
-    @include trangle();
+    @include triangle();
     background-image: url(../img/bg-intro-triangle-mobile-blue.svg);
     @media (min-width: $tablet-width){
       display:none;

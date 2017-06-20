@@ -12,7 +12,7 @@
   font-family: "PT Sans", Arial, sans-serif;
   text-transform:uppercase;
   outline:none;
-  @include btn-contition();
+  @include btn-condition();
   &:disabled{
     background-color:#e5e5e5;
   }

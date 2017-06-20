@@ -19,7 +19,7 @@
     }
   }
   &::before{
-    @include trangle();
+    @include triangle();
     background-image: url(../img/bg-intro-triangle-mobile.svg);
   }
 }
