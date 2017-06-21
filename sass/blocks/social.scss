@@ -10,7 +10,7 @@
   height:48px;
   background-color:$grey-blue;
   margin-right:6px;
-  @include btn-contition();
+  @include btn-condition();
 }
 .social__link--twitter{
   background-image:url(../img/icon-twitter.svg);

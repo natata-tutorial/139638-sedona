@@ -18,7 +18,7 @@
   padding:7px 0;
   text-transform:uppercase;
   @media (max-width:767px){
-    @include btn-contition();
+    @include btn-condition();
   }
   @media (min-width: $tablet-width){
     background-color:#ffffff;
