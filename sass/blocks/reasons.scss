@@ -1,17 +1,17 @@
 .reasons{
-  padding:0 ;
+  padding:0;
   margin:0;
   position:relative;
   background-color:$grey-color;
-  z-index: 6;
+  z-index:6;
   &::before{
     @include triangle();
-    background-image: url(../img/bg-intro-triangle-mobile-blue.svg);
-    @media (min-width: $tablet-width){
+    background-image:url(../img/bg-intro-triangle-mobile-blue.svg);
+    @media (min-width:$tablet-width){
       display:none;
     }
   }
-  @media (min-width: $tablet-width){
+  @media (min-width:$tablet-width){
     display:flex;
     flex-wrap:wrap;
   }

@@ -1,55 +1,59 @@
-.main-banner {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: top;
+.main-banner{
+  background-image:url("../img/bg-back-mobile@1x.jpg");
+  background-size:cover;
+  background-position:top;
   text-align:center;
   position:relative;
   z-index:5;
   &--short{
-    background-position: -224px 160px;
+    background-position:-224px 160px;
     background-size:auto;
   }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+}
+@media (max-width:767px){
+  .main-banner{
+    @media (min-resolution:144dpi), (min-resolution:1.5dppx){
+      background-image:url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 }
-.main-banner__photo {
+.main-banner__photo{
   padding:90px 20px 82px;
   box-sizing:border-box;
   &--short{
     padding:53px 40px 61px;
   }
 }
-@media (min-width: $tablet-width){
+@media (min-width:$tablet-width){
   .main-banner{
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: cover;
+    background-image:url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution:144dpi), (min-resolution:1.5dppx){
+      background-image:url("../img/bg-back-tablet@2x.jpg");
+      background-size:cover;
     }
   }
   .main-banner__photo{
-    padding: 80px 0px 87px;
+    padding:80px 0 87px;
   }
   .main-banner__photo--short{
-    padding: 94px 5px 116px;
+    padding:94px 5px 116px;
     }
   .main-banner--short{
-    background-position: 0px -227px;
+    background-position:0 -227px;
   }
 }
-@media(min-width: $desktop-width){
+@media(min-width:$desktop-width){
   .main-banner{
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: cover;
+    background-image:url("../img/bg-back-desktop@1x.jpg");
+    @media (min-resolution:144dpi), (min-resolution:1.5dppx){
+      background-image:url("../img/bg-back-desktop@2x.jpg");
+      background-size:cover;
     }
   }
   .main-banner__photo--short{
-    padding: 103px 0px 116px;
+    padding:103px 0 116px;
     }
   .main-banner--short{
-    background-position: 0px -216px;
+    background-position:0 -216px;
   }
 }

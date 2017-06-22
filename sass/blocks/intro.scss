@@ -3,24 +3,24 @@
   background-color:#ffffff;
   text-align:center;
   padding:40px 20px 50px;
-  z-index: 5;
+  z-index:5;
   &--photo {
-    padding: 35px 25px 30px;
+    padding:35px 25px 30px;
   }
   &--form {
-    padding: 35px 0 15px;
-    border: 1px solid #e5e5e5;
-    @media (min-width: $tablet-width){
-      padding: 73px 0 30px;
+    padding:35px 0 15px;
+    border:1px solid #e5e5e5;
+    @media (min-width:$tablet-width){
+      padding:73px 0 30px;
       border:none;
     }
-    @media (min-width: $desktop-width){
-      padding: 110px 0 30px;
+    @media (min-width:$desktop-width){
+      padding:110px 0 30px;
     }
   }
   &::before{
     @include triangle();
-    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-image:url(../img/bg-intro-triangle-mobile.svg);
   }
 }
 .intro__text{
@@ -30,24 +30,24 @@
   line-height:24px;
   color:$text-color;
 }
-@media (min-width: $tablet-width){
+@media (min-width:$tablet-width){
   .intro{
     &::before{
-      background-image: url(../img/bg-intro-triangle-desktop.svg);
+      background-image:url(../img/bg-intro-triangle-desktop.svg);
       top:-57px;
       width:1200px;
       height:57px;
-      left: -217px;
+      left:-217px;
     }
   }
   .intro--photo{
-    padding: 75px 170px 70px;
+    padding:75px 170px 70px;
   }
   .intro__text.intro__text--form{
     padding:30px 165px 30px;
   }
 }
-@media(min-width: $desktop-width){
+@media(min-width:$desktop-width){
   .intro{
     &::before{
       width:1200px;
@@ -58,10 +58,10 @@
     }
   }
   .intro__text.intro__text--form{
-    padding: 30px 380px;
+    padding:30px 380px;
   }
   .intro__text--photo{
-    padding: 30px 210px 4px;
+    padding:30px 210px 4px;
   }
 }
 .intro__title{
@@ -70,7 +70,7 @@
   padding:0 5px;
   margin:0;
   font-weight:700;
-    @media (min-width: $tablet-width){
+    @media (min-width:$tablet-width){
       font-size:30px;
       &--front{
         font-size:21px;
