@@ -51,6 +51,9 @@
     }
   }
 }
+.map__photo iframe{
+  width:100%;
+}
 .map__marker{
   background-image:radial-gradient(circle, $grey-blue 8px,
                     white 9px, white 14px, rgba(255, 255, 255, 0) 15px  );
