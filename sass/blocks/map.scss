@@ -60,7 +60,7 @@
   left:0;
 }
 @media (min-width: $tablet-width){
-  .text__br{
+  .map__text span {
     margin: 75px;
   }
   .map{
@@ -68,7 +68,7 @@
   }
 }
 @media (min-width: $desktop-width){
-  .text__br{
+  .map__text span{
     margin: 70px;
   }
 }

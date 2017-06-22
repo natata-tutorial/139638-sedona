@@ -8,9 +8,13 @@
   &--short{
     background-position: -224px 160px;
     background-size:auto;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }  
+}
+@media (max-width: 767px){
+  .main-banner{
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 }
 .main-banner__photo {
