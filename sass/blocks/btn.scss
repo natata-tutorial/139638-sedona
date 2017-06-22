@@ -9,7 +9,7 @@
   padding:16px;
   border:none;
   margin-bottom:50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family:"PT Sans", Arial, sans-serif;
   text-transform:uppercase;
   outline:none;
   @include btn-condition();
@@ -24,21 +24,21 @@
   }
   &--map{
     display:inline-block;
-    width: 100%;
+    width:100%;
   }
 }
-@media (min-width: $tablet-width){
+@media (min-width:$tablet-width){
   .btn--map{
     display:inline-block;
-    margin-bottom: 58px;
-    padding: 16px 133px 16px;
-    width: auto;
+    margin-bottom:58px;
+    padding:16px 133px 16px;
+    width:auto;
   }
   .btn--form{
     width:324px;
   }
 }
-@media (min-width: $desktop-width){
+@media (min-width:$desktop-width){
   .btn--map{
     margin-bottom:65px;
   }
