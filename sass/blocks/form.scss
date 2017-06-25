@@ -57,7 +57,7 @@
   color:$text-color;
 }
 input[placeholder], textarea[placeholder]{
-  color:black;
+  color:#000000;
   font-size:18px;
   line-height:26px;
   font-weight:700;
@@ -65,7 +65,7 @@ input[placeholder], textarea[placeholder]{
 }
 .form__presentation-field{
   width:60%;
-  color:black;
+  color:#000000;
   margin-left:14px;
   padding-left:21px;
   height:60px;
@@ -194,7 +194,7 @@ input:checked +.form__sight-label:active::before{
   padding:17px 0 22px 20px;
   margin:20px 20px 20px;
   resize:none;
-  color:black;
+  color:#000000;
   height:160px;
   border:none;
   background-color:#f2f2f2;
