@@ -18,63 +18,6 @@ var postcss = require('gulp-postcss');
 var reporter = require('postcss-reporter'); 
 var stylelint = require('stylelint');
 
-gulp.task("css-lint", function() {
-	// Stylelint config rules 
-	var stylelintConfig = { 
-		"rules": {
-        "indentation": "tab",
-        "string-quotes": "double",
-        "no-duplicate-selectors": true,
-        "color-hex-case": "lower",
-        "color-hex-length": "long",
-        "color-named": "never",
-        "selector-no-id": true,
-        "selector-combinator-space-after": "always",
-        "selector-attribute-quotes": "always",
-        "selector-attribute-operator-space-before": "always",
-        "selector-attribute-operator-space-after": "never",
-        "selector-attribute-brackets-space-inside": "never",
-        "declaration-block-trailing-semicolon": "always",
-        "declaration-no-important": true,
-        "declaration-colon-space-before": "never",
-        "declaration-colon-space-after": "never",
-        "property-no-vendor-prefix": true,
-        "number-leading-zero": "always",
-        "function-url-quotes": "never",
-        "function-url-data-uris": "never",
-        "font-weight-notation": "numeric",
-        "font-family-name-quotes": "always-where-recommended",
-        "comment-whitespace-inside": "always",
-        "comment-empty-line-before": "never",
-        "rule-empty-line-before": "never-multi-line",
-        "selector-pseudo-element-colon-notation": "double",
-        "selector-pseudo-class-parentheses-space-inside": "never",
-        "selector-no-universal": true,
-        "media-feature-range-operator-space-before": "never",
-        "media-feature-range-operator-space-after": "never",
-        "media-feature-parentheses-space-inside": "never",
-        "media-feature-name-no-vendor-prefix": true,
-        "media-feature-colon-space-before": "never",
-        "media-feature-colon-space-after": "never"
-    }
-	} 
-	var processors = [ stylelint(stylelintConfig), 
-		// Pretty reporting config 
-		reporter({ 
-			clearMessages: true, 
-			throwError: true 
-		}) 
-	]; 
-	return gulp.src( 
-		// Stylesheet source: 
-		['build/scss', 
-		// Ignore linting vendor assets: 
-		// (Useful if you have bower components) 
-		'build/scss'] 
-	) 
-	.pipe(postcss(processors, {syntax: syntax_scss}));
-});
->>>>>>> module8-task1
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
