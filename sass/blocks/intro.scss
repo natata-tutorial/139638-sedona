@@ -30,7 +30,7 @@
   line-height:24px;
   color:$text-color;
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .intro{
     &::before{
       background-image:url(../img/bg-intro-triangle-desktop.svg);

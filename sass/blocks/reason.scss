@@ -61,42 +61,42 @@
 }
 .reason__text{
   font-size:14px;
-  margin-bottom:0px;
-  padding:0px 0px 45px;
+  margin-bottom:0;
+  padding:0 0 45px;
   margin:0 20px 0;
   line-height:21px;
   &--bord-bot{
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom:1px solid #d6d6d6;
     @media (min-width: $tablet-width){
       border-bottom:none;
     }
   }
   @media (min-width: $tablet-width){
-    padding:0px 25px 45px;
+    padding:0 25px 45px;
   }
   @media(min-width:$desktop-width){
     padding:0 45px 50px;
   }
 }
-.reason--bg-grey  .reason__text{
+.reason--bg-grey .reason__text{
   padding:4px 15px 30px;
   color:$text-color;
   @media (min-width: $tablet-width){
-    padding: 0px 20px 44px 31px;
+    padding:0 20px 44px 31px;
   }
   @media (min-width: $desktop-width){
-    padding: 0px 35px 65px ;
+    padding:0 35px 65px ;
   }
 }
 .reason--bg-grey {
-  @media (min-width: $tablet-width){
+  @media (min-width:$tablet-width){
   flex-basis:33%;
   }
   @media(min-width:$desktop-width){
     flex-basis:400px;
   }
 }
-@media (min-width: $tablet-width){
+@media (min-width:$tablet-width){
   .reason__about--devil{
     order:2;
   }
@@ -106,8 +106,8 @@
 }
 .reason__about--devil .reason__text{
   line-height:20px;
-  padding-top: 8px;
-  padding-bottom: 39px;
+  padding-top:8px;
+  padding-bottom:39px;
 }
 @media (min-width: $desktop-width){
   .reason__about--devil .reason__text
