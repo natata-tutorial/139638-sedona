@@ -1,6 +1,6 @@
 .reason{
   list-style:none;
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
   display:flex;
   flex-wrap:wrap;
   width:100%;
@@ -12,7 +12,7 @@
   background-color:$grey-blue;
   color:#ffffff;
   }
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     flex-basis:256px;
   }
   @media(min-width:$desktop-width){
@@ -21,7 +21,7 @@
 }
 .reason__photo{
   display:block;
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     width:512px;
   }
   @media(min-width:$desktop-width){
@@ -33,7 +33,7 @@
   padding:38px 20px 0;
   font-size:18px;
   margin:0;
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     font-size:21px;
     padding:45px 45px 0;
   }
@@ -43,11 +43,11 @@
 }
 .reason--bg-grey .reason__title{
   padding:28px 20px 0;
-  @media (min-width: $tablet-width){
-    padding: 42px 50px 0;
+  @media(min-width: $tablet-width){
+    padding:42px 50px 0;
   }
-  @media (min-width: $desktop-width){
-    padding: 42px 120px 0;
+  @media(min-width: $desktop-width){
+    padding:42px 120px 0;
   }
 }
 .reason--bg-grey .reason__number{
@@ -55,7 +55,7 @@
 }
 .reason__number{
   font-size:14px;
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     margin-bottom:25px;
   }
 }
@@ -67,7 +67,7 @@
   line-height:21px;
   &--bord-bot{
     border-bottom:1px solid #d6d6d6;
-    @media (min-width: $tablet-width){
+    @media(min-width: $tablet-width){
       border-bottom:none;
     }
   }
@@ -81,22 +81,22 @@
 .reason--bg-grey .reason__text{
   padding:4px 15px 30px;
   color:$text-color;
-  @media (min-width: $tablet-width){
+  @media(min-width: $tablet-width){
     padding:0 20px 44px 31px;
   }
-  @media (min-width: $desktop-width){
+  @media(min-width: $desktop-width){
     padding:0 35px 65px ;
   }
 }
 .reason--bg-grey {
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
   flex-basis:33%;
   }
   @media(min-width:$desktop-width){
     flex-basis:400px;
   }
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .reason__about--devil{
     order:2;
   }
@@ -109,7 +109,7 @@
   padding-top:8px;
   padding-bottom:39px;
 }
-@media (min-width: $desktop-width){
+@media(min-width: $desktop-width){
   .reason__about--devil .reason__text
   {
     padding: 2px 65px 29px;
