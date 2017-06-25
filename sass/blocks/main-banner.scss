@@ -10,7 +10,7 @@
     background-size:auto;
   }
 }
-@media (max-width:767px){
+@media(max-width:767px){
   .main-banner{
     @media (min-resolution:144dpi), (min-resolution:1.5dppx){
       background-image:url("../img/bg-back-mobile@2x.jpg");
@@ -24,7 +24,7 @@
     padding:53px 40px 61px;
   }
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .main-banner{
     background-image:url("../img/bg-back-tablet@1x.jpg");
     @media (min-resolution:144dpi), (min-resolution:1.5dppx){
@@ -45,7 +45,7 @@
 @media(min-width:$desktop-width){
   .main-banner{
     background-image:url("../img/bg-back-desktop@1x.jpg");
-    @media (min-resolution:144dpi), (min-resolution:1.5dppx){
+    @media(min-resolution:144dpi), (min-resolution:1.5dppx){
       background-image:url("../img/bg-back-desktop@2x.jpg");
       background-size:cover;
     }

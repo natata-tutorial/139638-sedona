@@ -18,12 +18,12 @@ var popupError  = document.querySelector(".popup--error");
 var popupSuc = document.querySelector(".popup--success");
 var popupOverlay = document.querySelector(".popup--overlay");
 var formSubmit = document.querySelector(".form-js");
-var popupErrorBtn = document.querySelector(".popup--error__button")
-var popupSucBtn = document.querySelector(".popup--success__button")
+var popupErrorBtn = document.querySelector(".popup--error__button");
+var popupSucBtn = document.querySelector(".popup--success__button");
 formSubmit.addEventListener("submit", function (event) {
   var name = document.getElementById("name");
-  var secName = formSubmit.querySelector("[name=second-name]");
   var tel = formSubmit.querySelector("[name=tel]");
+  var secName = formSubmit.querySelector("[name=second-name]");
   var email = formSubmit.querySelector("[name=email]");
   if (!name.value || !secName.value || !tel.value || !email.value  ){
     event.preventDefault();

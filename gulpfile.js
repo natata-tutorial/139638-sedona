@@ -18,31 +18,63 @@ var postcss = require('gulp-postcss');
 var reporter = require('postcss-reporter'); 
 var stylelint = require('stylelint');
 
-var stylelintConfig = {
-  "rules": {
-    "block-no-empty": true,
-     "color-no-invalid-hex": true,
-     "declaration-colon-space-after": "always",
-     "declaration-colon-space-before": "never",
-     "function-comma-space-after": "always",
-     "function-url-quotes": "double",
-     "media-feature-colon-space-after": "always",
-     "media-feature-colon-space-before": "never",
-     "media-feature-name-no-vendor-prefix": true,
-     "max-empty-lines": 5,
-     "number-leading-zero": "never",
-     "number-no-trailing-zeros": true,
-     "property-no-vendor-prefix": true,
-     "rule-no-duplicate-properties": true,
-     "declaration-block-no-single-line": true,
-     "rule-trailing-semicolon": "always",
-     "selector-list-comma-space-before": "never",
-     "selector-list-comma-newline-after": "always",
-     "selector-no-id": true,
-     "string-quotes": "double",
-     "value-no-vendor-prefix": true,
-  }
-}
+gulp.task("css-lint", function() {
+	// Stylelint config rules 
+	var stylelintConfig = { 
+		"rules": {
+        "indentation": "tab",
+        "string-quotes": "double",
+        "no-duplicate-selectors": true,
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "color-named": "never",
+        "selector-no-id": true,
+        "selector-combinator-space-after": "always",
+        "selector-attribute-quotes": "always",
+        "selector-attribute-operator-space-before": "always",
+        "selector-attribute-operator-space-after": "never",
+        "selector-attribute-brackets-space-inside": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-no-important": true,
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "never",
+        "property-no-vendor-prefix": true,
+        "number-leading-zero": "always",
+        "function-url-quotes": "never",
+        "function-url-data-uris": "never",
+        "font-weight-notation": "numeric",
+        "font-family-name-quotes": "always-where-recommended",
+        "comment-whitespace-inside": "always",
+        "comment-empty-line-before": "never",
+        "rule-empty-line-before": "never-multi-line",
+        "selector-pseudo-element-colon-notation": "double",
+        "selector-pseudo-class-parentheses-space-inside": "never",
+        "selector-no-universal": true,
+        "media-feature-range-operator-space-before": "never",
+        "media-feature-range-operator-space-after": "never",
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-name-no-vendor-prefix": true,
+        "media-feature-colon-space-before": "never",
+        "media-feature-colon-space-after": "never"
+    }
+	} 
+	var processors = [ stylelint(stylelintConfig), 
+		// Pretty reporting config 
+		reporter({ 
+			clearMessages: true, 
+			throwError: true 
+		}) 
+	]; 
+	return gulp.src( 
+		// Stylesheet source: 
+		['build/scss', 
+		// Ignore linting vendor assets: 
+		// (Useful if you have bower components) 
+		'build/scss'] 
+	) 
+	.pipe(postcss(processors, {syntax: syntax_scss}));
+});
+>>>>>>> module8-task1
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")

@@ -1,6 +1,6 @@
 .photo-catalog{
   background-color:#ffffff;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
   display:flex;
   flex-wrap:wrap;
   padding:0 60px;
@@ -11,7 +11,7 @@
   flex-wrap:wrap;
   border-bottom:1px solid #e5e5e5;
   min-height:415px;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     flex-basis:50%;
     background-color:#f2f2f2;
     border-bottom:none;
@@ -21,7 +21,7 @@
   }
 }
 .photo-catalog__item:first-child{
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     flex-basis:100%;
   }
 }
@@ -30,7 +30,7 @@
   order:1;
   flex-basis:100%;
   padding-top:20px;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     padding:0;
   }
 }
@@ -39,7 +39,7 @@
     order:4;
     flex-basis:100%;
     margin-bottom:19px;
-    @media (min-width:$tablet-width){
+    @media(min-width:$tablet-width){
       flex-basis:20%;
       order:3;
       padding:0;
@@ -48,7 +48,7 @@
       right:30px;
       top:296px;
     }
-    @media (min-width:$desktop-width){
+    @media(min-width:$desktop-width){
       top:218px;
       z-index:11;
     }
@@ -63,11 +63,11 @@
   margin-bottom:0;
   text-transform:none;
   color:$text-color;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     flex-basis:40%;
     padding-bottom:18px;
   }
-  @media (min-width:$desktop-width){
+  @media(min-width:$desktop-width){
     color:#ffffff;
   }
 }
@@ -79,11 +79,11 @@
   font-weight:bold;
   line-height:21px;
   margin:5px 0 4px;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     flex-basis:60%;
     padding:8px 20px 4px;
   }
-  @media (min-width:$desktop-width){
+  @media(min-width:$desktop-width){
     padding:13px 20px 4px;
   }
 }
@@ -96,7 +96,7 @@
   order:2;
   z-index:6;
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .photo-catalog__photo img{
     width:324px;
     height:267px;
@@ -117,7 +117,7 @@
   .photo-catalog__rating img{
     float:left;
   }
-  .photo-catalog__item:first-of-type  .photo-catalog__photo img{
+  .photo-catalog__item:first-of-type .photo-catalog__photo img{
     width:648px;
     height:400px;
   }
@@ -130,7 +130,7 @@
     width:100%;
     margin-top:-83px;
     color:#ffffff;
-    background-color:rgba(0,0,0, 0.3);
+    background-color:rgba(0, 0, 0, 0.3);
   }
   .photo-catalog__item{
     flex-basis:400px;
