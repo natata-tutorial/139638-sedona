@@ -1,11 +1,11 @@
 .form form{
   background-color:#ffffff;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     display:flex;
     flex-wrap:wrap;
     padding:0 60px;
   }
-  @media (min-width:$desktop-width){
+  @media(min-width:$desktop-width){
     padding:0 120px 5px;
   }
 }
@@ -57,7 +57,7 @@
   color:$text-color;
 }
 input[placeholder], textarea[placeholder]{
-  color:black;
+  color:#000000;
   font-size:18px;
   line-height:26px;
   font-weight:700;
@@ -65,7 +65,7 @@ input[placeholder], textarea[placeholder]{
 }
 .form__presentation-field{
   width:60%;
-  color:black;
+  color:#000000;
   margin-left:14px;
   padding-left:21px;
   height:60px;
@@ -124,12 +124,12 @@ input[placeholder], textarea[placeholder]{
     background-repeat:no-repeat;
   }
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .form__icon--tel, .form__icon--email{
     right:0;
   }
 }
-@media (min-width:$desktop-width){
+@media(min-width:$desktop-width){
   .form__icon--tel, .form__icon--email{
     top:1px;
   }
@@ -160,7 +160,7 @@ input:checked +.form__effect-label::before{
                     rgba(255, 255, 255, 0) 9px);
 }
 input:checked +.form__effect-label:active::before{
-  background-image:radial-gradient(circle, rgba(0,0,0, 0.3) 9px,
+  background-image:radial-gradient(circle, rgba(0, 0, 0, 0.3) 9px,
                     rgba(255, 255, 255, 0) 9px);
 }
 .form__sight-field{
@@ -194,7 +194,7 @@ input:checked +.form__sight-label:active::before{
   padding:17px 0 22px 20px;
   margin:20px 20px 20px;
   resize:none;
-  color:black;
+  color:#000000;
   height:160px;
   border:none;
   background-color:#f2f2f2;
@@ -220,7 +220,7 @@ input:checked +.form__sight-label:active::before{
     color:$text-color;
   }
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .form__group{
     border-bottom:none;
   }
@@ -340,7 +340,7 @@ input:checked +.form__sight-label:active::before{
     margin-bottom:30px;
   }
 }
-@media (min-width:$desktop-width){
+@media(min-width:$desktop-width){
   .form__title{
     padding:0 0 20px;
     &--effect{

@@ -1,7 +1,7 @@
 .main-nav{
   text-align:center;
   position:relative;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     display:flex;
     background:#ffffff;
     justify-content:space-between;
@@ -11,18 +11,18 @@
   font-size:18px;
   font-weight:700;
   line-height:40px;
-  color:white;
+  color:#ffffff;
   display:block;
   border-bottom:1px solid rgba(0, 0, 0, 0.2);
   border-top:1px solid rgba(255, 255, 255, 0.3);
   padding:7px 0;
   text-transform:uppercase;
-  @media (max-width:767px){
+  @media(max-width:767px){
     @include btn-condition();
   }
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     background-color:#ffffff;
-    color:black;
+    color:#000000;
     font-size:14px;
     border-bottom:none;
     margin-left:47px;
@@ -79,13 +79,13 @@
   height:22px;
   right:20px;
   top:17px;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     display:none;
   }
 }
-@media (max-width:767px){
+@media(max-width:767px){
   .main-nav--closed{
-  display:none;
+    display:none;
   }
   .main-nav--opened{
     display:block;
@@ -98,6 +98,10 @@
 }
 //Анимация
 @keyframes menuOpen{
-  0% {transform:translateY(300px);}
-  100% {transform:translateY(0);}
+  0%{
+    transform:translateY(300px);
+  }
+  100%{
+    transform:translateY(0);
+  }
 }

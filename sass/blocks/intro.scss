@@ -4,17 +4,17 @@
   text-align:center;
   padding:40px 20px 50px;
   z-index:5;
-  &--photo {
+  &--photo{
     padding:35px 25px 30px;
   }
-  &--form {
+  &--form{
     padding:35px 0 15px;
     border:1px solid #e5e5e5;
-    @media (min-width:$tablet-width){
+    @media(min-width:$tablet-width){
       padding:73px 0 30px;
       border:none;
     }
-    @media (min-width:$desktop-width){
+    @media(min-width:$desktop-width){
       padding:110px 0 30px;
     }
   }
@@ -30,7 +30,7 @@
   line-height:24px;
   color:$text-color;
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .intro{
     &::before{
       background-image:url(../img/bg-intro-triangle-desktop.svg);
@@ -70,7 +70,7 @@
   padding:0 5px;
   margin:0;
   font-weight:700;
-    @media (min-width:$tablet-width){
+    @media(min-width:$tablet-width){
       font-size:30px;
       &--front{
         font-size:21px;

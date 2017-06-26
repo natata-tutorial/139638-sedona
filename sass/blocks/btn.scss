@@ -27,7 +27,7 @@
     width:100%;
   }
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .btn--map{
     display:inline-block;
     margin-bottom:58px;
@@ -38,7 +38,7 @@
     width:324px;
   }
 }
-@media (min-width:$desktop-width){
+@media(min-width:$desktop-width){
   .btn--map{
     margin-bottom:65px;
   }

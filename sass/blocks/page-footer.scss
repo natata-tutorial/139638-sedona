@@ -2,27 +2,27 @@
   background-color:#ffffff;
   padding:10px 20px;
   text-align:center;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:36px 60px;
     text-align:left;
   }
-  @media (min-width:$desktop-width){
+  @media(min-width:$desktop-width){
     padding:36px 40px 36px 64px;
   }
 }
 .page-footer__hashtag{
-  color:black;
+  color:#000000;
   font-size:21px;
   line-height:26px;
   font-weight:700;
   flex-basis:33%;
-  @media (min-width:$tablet-width){
+  @media(min-width:$tablet-width){
     padding-right:20px;
   }
-  @media (min-width:$desktop-width){
+  @media(min-width:$desktop-width){
     padding-left:70px;
   }
 }

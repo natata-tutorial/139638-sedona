@@ -16,10 +16,10 @@
 .copyright__logo:hover svg{
   fill:#81b3d2;
 }
-.copyright__logo:active  svg{
-  fill:rgba(0, 0, 0, .3);
+.copyright__logo:active svg{
+  fill:rgba(0, 0, 0, 0.3);
 }
-@media (min-width:$tablet-width){
+@media(min-width:$tablet-width){
   .copyright{
     margin:0;
     justify-content:flex-end;

@@ -14,6 +14,9 @@ var del = require("del");
 var minify = require("gulp-csso");
 var mqpacker = require("css-mqpacker");
 var run = require("run-sequence");
+var postcss = require("gulp-postcss");
+var reporter = require("postcss-reporter");
+var stylelint = require("stylelint")
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")

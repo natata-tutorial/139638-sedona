@@ -18,7 +18,7 @@
 }
 @mixin input($width:100%){
   width:$width;
-  color:black;
+  color:#ffffff;
   padding-left:21px;
   height:60px;
   border:none;
@@ -31,7 +31,7 @@
   }
   &:active{
     background-color:#5496bd;
-    color:rgba(255,255,255, 0.3);
+    color:rgba(255, 255, 255, 0.3);
   }
 }
 @mixin form-title-decor($top:0, $left:0, $width:125px){
