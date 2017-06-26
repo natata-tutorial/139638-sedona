@@ -1,16 +1,16 @@
 .reason{
   list-style:none;
   @media(min-width:$tablet-width){
-  display:flex;
-  flex-wrap:wrap;
-  width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
   }
 }
 .reason__about{
   text-align:center;
   &--bg-triangle{
-  background-color:$grey-blue;
-  color:#ffffff;
+    background-color:$grey-blue;
+    color:#ffffff;
   }
   @media(min-width:$tablet-width){
     flex-basis:256px;
@@ -61,7 +61,6 @@
 }
 .reason__text{
   font-size:14px;
-  margin-bottom:0;
   padding:0 0 45px;
   margin:0 20px 0;
   line-height:21px;
@@ -85,12 +84,12 @@
     padding:0 20px 44px 31px;
   }
   @media(min-width:$desktop-width){
-    padding:0 35px 65px ;
+    padding:0 35px 65px;
   }
 }
 .reason--bg-grey {
   @media(min-width:$tablet-width){
-  flex-basis:33%;
+    flex-basis:33%;
   }
   @media(min-width:$desktop-width){
     flex-basis:400px;
@@ -110,8 +109,7 @@
   padding-bottom:39px;
 }
 @media(min-width:$desktop-width){
-  .reason__about--devil .reason__text
-  {
+  .reason__about--devil .reason__text{
     padding:2px 65px 29px;
   }
 }

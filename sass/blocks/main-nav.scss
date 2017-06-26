@@ -52,10 +52,10 @@
     }
   }
   &:nth-child(2){
-  border-top:none;
+    border-top:none;
   }
   &:last-child{
-  border-bottom:none;
+    border-bottom:none;
   }
 }
 @media(min-width:$desktop-width){
