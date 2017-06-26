@@ -183,33 +183,23 @@
 }
 @keyframes popup{
   0%{
-  	transform:translateY(-5000px) translateX(-200px)
   }
   20%{
-  	transform:translateY(0) translateX(-200px)
   }
   30%{
-  	transform:translateY(-350px) translateX(-200px)
   }
   40%{
-  	transform:translateY(0) translateX(-200px)
   }
   50%{
-  	transform:translateY(-200px) translateX(-200px)
   }
   60%{
-  	transform:translateY(-0) translateX(-200px)
   }
   70%{
-  	transform:translateY(-100px) translateX(-200px)
   }
   80%{
-  	transform:translateY(-0) translateX(-200px)
   }
   90%{
-  	transform:translateY(-50px) translateX(-200px)
   }
   100%{
-  	transform:translateY(-0) translateX(-200px)
   }
 }

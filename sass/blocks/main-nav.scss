@@ -98,6 +98,10 @@
 }
 //Анимация
 @keyframes menuOpen{
-  0% {transform:translateY(300px);}
-  100% {transform:translateY(0);}
+  0%{
+    transform:translateY(300px);
+  }
+  100%{
+    transform:translateY(0);
+  }
 }
