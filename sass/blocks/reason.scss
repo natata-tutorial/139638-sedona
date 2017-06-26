@@ -89,7 +89,7 @@
 }
 .reason--bg-grey {
   @media(min-width:$tablet-width){
-  flex-basis:33%;
+    flex-basis:33%;
   }
   @media(min-width:$desktop-width){
     flex-basis:400px;
