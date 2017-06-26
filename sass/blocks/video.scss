@@ -119,7 +119,7 @@
     fill:#333333;
   }
   &:active{
-    fill:#c1c1c1
+    fill:#c1c1c1;
   }
 }
 .video__button--repeat{
@@ -174,7 +174,6 @@ input[type=range]::-moz-range-thumb{
 input[type=range]::-webkit-slider-thumb{
   -webkit-appearance:none;
   border:4px solid #ffffff;
-  height:8x;
   width:8px;
   border-radius:50%;
   cursor:pointer;
@@ -188,7 +187,6 @@ input[type=range]::-webkit-slider-runnable-track{
 }
 input[type=range]::-ms-thumb{
   border:1px solid #ffffff;
-  height:7x;
   width:7px;
   background-color:#ffffff;
   border-radius:50%;
