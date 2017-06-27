@@ -36,7 +36,7 @@
         <p class="intro__text intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
-        <form class="form-js" method="post" action="https://echo.htmlacademy.ru/">
+        <form id="form-js" method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__group form__group--fio">
             <h3 class="form__title form__title--fio">Представьтесь:</h3>
               <div class="form__wrapper form__wrapper--fio">
@@ -54,14 +54,14 @@
           </div>
           <div class="form__group form__group--contacts">
             <h3 class="form__title form__title--contacts">Контактная информация:</h3>
-              <div class="form__wrapper form__wrapper--contact">
+              <div class="form__wrapper form__wrapper--contacts">
                 <label class="form__contacts-label" for="tel"><span>Контактный</span> телефон*:</label>
                 <input class="form__contacts-field form__contacts-field--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон">
                 <span class="form__icon form__icon--tel"></span>
               </div>
-              <div class="form__wrapper form__wrapper--contact">
+              <div class="form__wrapper form__wrapper--contacts">
                 <label class="form__contacts-label form__contacts-label--email" for="email">Электронная почта*:</label>
-                <input class="form__contacts-field form__contacts-field--email-field" type="email" name="email" id="email" placeholder="Введите e-mail">
+                <input class="form__contacts-field form__contacts-field--email" type="email" name="email" id="email" placeholder="Введите e-mail">
                 <span class="form__icon form__icon--email"></span>
               </div>
           </div>
@@ -129,7 +129,7 @@
     <section class="popup popup--error">
       <h3 class="popup__heading popup__heading--error">Что-то пошло не так!</h3>
       <p class="popup__text"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить </p>
-      <button class="btn popup--error__button" type="button">OK</button>
+      <button class="btn btn--popup btn--error" type="button">OK</button>
     </section>
     <section class="popup popup--success">
       <h3 class="popup__heading popup__heading--success">Ваш отзыв отправлен!</h3>
