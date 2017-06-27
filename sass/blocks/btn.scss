@@ -46,3 +46,41 @@
     width:480px;
   }
 }
+.btn--popup.btn--success{
+  border:0;
+  margin:0 auto;
+  border:none;
+  outline:none;
+  width:280px;
+  height:60px;
+}
+.btn--popup.btn--error{
+  border:0;
+  margin:0 auto 35px;
+  border:none;
+  outline:none;
+  width:180px;
+  height:60px;
+}
+@media (min-width:$tablet-width){
+	.btn--popup.btn--success{
+    width:460px;
+  }
+  .btn--popup.btn--error{
+    border:0;
+    margin:0 auto 35px;
+    width:270px;
+    height:55px;
+  }
+}
+@media(min-width:$desktop-width){
+  .btn--popup.btn--error{
+    border:0;
+    margin:0 auto 35px;
+    width:270px;
+    height:55px;
+  }
+  .btn--popup.btn--success{
+    width:460px;
+  }
+}

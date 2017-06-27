@@ -17,9 +17,9 @@ mainNav.classList.remove("main-nav--nojs");
 var popupError  = document.querySelector(".popup--error");
 var popupSuc = document.querySelector(".popup--success");
 var popupOverlay = document.querySelector(".popup--overlay");
-var formSubmit = document.querySelector(".form-js");
-var popupErrorBtn = document.querySelector(".popup--error__button");
-var popupSucBtn = document.querySelector(".popup--success__button");
+var formSubmit = document.getElementById("form-js");
+var popupErrorBtn = document.querySelector(".btn--error");
+var popupSucBtn = document.querySelector(".btn--success");
 formSubmit.addEventListener("submit", function (event) {
   var name = document.getElementById("name");
   var tel = formSubmit.querySelector("[name=tel]");

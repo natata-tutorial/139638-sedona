@@ -41,7 +41,7 @@
   &.form__wrapper--fio{
     flex-wrap:nowrap;
   }
-  &--contact{
+  &--contacts{
     margin-bottom:23px;
   }
   &.form__wrapper--effect, &--sight{
@@ -310,7 +310,7 @@ input:checked +.form__sight-label:active::before{
     &.form__wrapper--fio:first-of-type{
       margin-top:34px;
     }
-    &--contact{
+    &--contacts{
       margin-top:5px;
       margin-bottom:30px;
     }
@@ -388,7 +388,7 @@ input:checked +.form__sight-label:active::before{
   .form__contacts-label span{
     display:none;
   }
-  .form__wrapper--contact{
+  .form__wrapper--contacts{
     flex-basis:400px;
     margin-top:55px;
     &:nth-of-type(2){
