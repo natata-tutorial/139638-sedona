@@ -74,11 +74,11 @@
     padding:0 10px;
   }
   @media(min-width:$tablet-width){
-  	font-size:30px;
-  	&--front{
-    	font-size:21px;
-    	padding:5px 60px;
-  	}
+    font-size:30px;
+    &--front{
+      font-size:21px;
+      padding:5px 60px;
+    }
   }
 }
 @media(min-width:$desktop-width){
