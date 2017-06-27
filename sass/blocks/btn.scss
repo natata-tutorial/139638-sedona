@@ -46,3 +46,26 @@
     width:480px;
   }
 }
+.btn-popup{
+  border:none;
+  outline:0;
+}
+.btn--success{
+  margin:0 auto;
+  width:280px;
+  height:60px;
+}
+.btn--error{
+  margin:0 auto 35px;
+  width:180px;
+  height:60px;
+  }
+@media (min-width:$tablet-width){
+  .btn--success{
+    width:460px;
+  }
+  .btn--error{
+    width:270px;
+    height:55px;
+  }
+}
